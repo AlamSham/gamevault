@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Games | GameVault APK</title>
+  <meta name="description" content="Search and find your favorite Android games APK download on GameVault APK.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="search">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="GameVault Logo" class="site-logo-img">
+        <span>GameVault</span>
+      </a>
+      <div class="nav-search">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="nav-search-input" placeholder="Search games..." autocomplete="off">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="category.html?id=action">🎮 Games</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu"><span>☰</span></button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:var(--spacing-2xl); padding-bottom:var(--spacing-4xl); min-height:60vh;">
+    <!-- Search Bar on Page -->
+    <div class="hero-search" style="max-width:600px; margin-bottom:var(--spacing-2xl);">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-page-input" placeholder="Search for games..." autocomplete="off">
+      <button onclick="performSearch(document.getElementById('search-page-input').value)">Search</button>
+    </div>
+
+    <!-- Search Header -->
+    <div class="search-results-header" id="search-header">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Search Results -->
+    <div id="search-results">
+      <!-- Rendered by JS -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="GameVault Logo" class="site-logo-img" style="height:32px;"> <span>GameVault APK</span>
+          </div>
+          <p>Your trusted source for safe Android game APK downloads.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="category.html?id=action">Action</a></li>
+            <li><a href="category.html?id=racing">Racing</a></li>
+            <li><a href="category.html?id=puzzle">Puzzle</a></li>
+            <li><a href="category.html?id=casual">Casual</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="dmca.html">DMCA Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 GameVault APK. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/games-data.js?v=1.1"></script>
+  <script src="js/games-data-2.js?v=1.1"></script>
+  <script src="js/games-data-3.js?v=1.1"></script>
+  <script src="js/games-data-4.js?v=1.1"></script>
+  <script src="js/app.js?v=1.1"></script>
+</body>
+</html>
