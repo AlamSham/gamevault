@@ -306,44 +306,56 @@ a:hover {
 /* Mobile & Tablet Nav */
 @media (max-width: 992px) {
   .nav-search {
-    display: none;
+    display: none !important;
   }
   .nav-links {
-    display: none;
-    position: fixed;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 64px);
-    background: #06060b;
-    flex-direction: column;
-    padding: var(--spacing-2xl) var(--spacing-lg);
-    gap: var(--spacing-md);
-    z-index: 99999;
-    overflow-y: auto;
+    display: none !important;
+    position: fixed !important;
+    top: 64px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: calc(100vh - 64px) !important;
+    background-color: #06060b !important;
+    flex-direction: column !important;
+    padding: 2rem 1.5rem !important;
+    gap: 1rem !important;
+    z-index: 999999 !important;
+    overflow-y: auto !important;
   }
   .nav-links.active {
     display: flex !important;
   }
+  .nav-links li {
+    width: 100% !important;
+    list-style: none !important;
+  }
   .nav-links a {
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 14px 20px;
-    width: 100%;
-    border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--border-color);
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    padding: 16px 20px !important;
+    width: 100% !important;
+    border-radius: 12px !important;
+    background: #13131f !important;
+    border: 1px solid rgba(0, 255, 136, 0.25) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
   }
   .nav-links a:hover,
   .nav-links a.active {
-    background: var(--accent-green-dim);
-    color: var(--accent-green);
-    border-color: rgba(0, 255, 136, 0.4);
+    background: rgba(0, 255, 136, 0.15) !important;
+    color: #00ff88 !important;
+    border-color: #00ff88 !important;
   }
   .nav-mobile-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .mobile-search {
     display: block !important;
