@@ -16,7 +16,7 @@ function SearchResults() {
     <div>
       <div style={{ margin: "2rem 0 3rem" }}>
         <h1 style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 10 }}>
-          <Search size={28} /> Search Results for "{query}"
+          <Search size={28} /> Search Results for &quot;{query}&quot;
         </h1>
         <p style={{ marginTop: "0.25rem" }}>
           Found {results.length} games matching your keyword.
@@ -32,9 +32,9 @@ function SearchResults() {
       ) : (
         <div style={{ textAlign: "center", padding: "4rem 0" }}>
           <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>🔍</div>
-          <h3>No games found for "{query}"</h3>
+          <h3>No games found for &quot;{query}&quot;</h3>
           <p style={{ marginTop: "0.5rem" }}>
-            Try searching for generic terms like "Subway", "Fire", "Racing", "Strategy", "Cricket", or "Minecraft".
+            Try searching for generic terms like {`"Subway"`}, {`"Fire"`}, {`"Racing"`}, {`"Strategy"`}, {`"Cricket"`}, or {`"Minecraft"`}.
           </p>
         </div>
       )}

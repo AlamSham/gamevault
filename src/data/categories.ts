@@ -6,28 +6,28 @@ export const CATEGORIES: Category[] = [
     "name": "Action",
     "icon": "⚔️",
     "description": "High-octane action games with intense gameplay and combat",
-    "count": 35
+    "count": 65
   },
   {
     "id": "racing",
     "name": "Racing",
     "icon": "🏎️",
     "description": "Speed through tracks in the best racing games for Android",
-    "count": 20
+    "count": 13
   },
   {
     "id": "puzzle",
     "name": "Puzzle",
     "icon": "🧩",
     "description": "Brain-teasing puzzle games to challenge your mind",
-    "count": 25
+    "count": 27
   },
   {
     "id": "strategy",
     "name": "Strategy",
     "icon": "🏰",
     "description": "Build, plan, and conquer with strategy games",
-    "count": 18
+    "count": 12
   },
   {
     "id": "sports",
@@ -41,14 +41,14 @@ export const CATEGORIES: Category[] = [
     "name": "Casual",
     "icon": "🎯",
     "description": "Easy to play, hard to put down casual games",
-    "count": 30
+    "count": 9
   },
   {
     "id": "arcade",
     "name": "Arcade",
     "icon": "👾",
     "description": "Classic arcade-style games with endless fun",
-    "count": 22
+    "count": 29
   },
   {
     "id": "rpg",
@@ -62,14 +62,14 @@ export const CATEGORIES: Category[] = [
     "name": "Simulation",
     "icon": "🌍",
     "description": "Simulate real-world experiences on your phone",
-    "count": 10
+    "count": 20
   },
   {
     "id": "adventure",
     "name": "Adventure",
     "icon": "🗺️",
     "description": "Explore vast worlds in adventure games",
-    "count": 15
+    "count": 9
   }
 ];
 

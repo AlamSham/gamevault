@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getGameById, getApkMirrorUrl, getApkPureUrl } from "@/data/games";
+import { getGameById, getApkPureUrl } from "@/data/games";
 import DownloadTimer from "@/components/DownloadTimer";
 import { ShieldCheck, ArrowLeft, Server } from "lucide-react";
 
@@ -20,8 +20,8 @@ export async function generateMetadata({ params, searchParams }: DownloadPagePro
   }
 
   const activeVersion = version || game.version;
-  const title = `Download ${game.name} APK v${activeVersion} ${version ? "(Older Release Mirror)" : "(Latest Version)"} — GameVault`;
-  const description = `Direct verified download mirror for ${game.name} APK v${activeVersion} for Android. 100% verified safe and malware free on GameVault.`;
+  const title = `Download ${game.name} APK v${activeVersion} ${version ? "(Previous Release)" : "(Latest Version)"} — GameVault`;
+  const description = `Get ${game.name} APK v${activeVersion} for Android. 100% verified safe and malware free download on GameVault.`;
   const url = `https://gamevaultinfo.com/download/${game.id}${version ? `?version=${version}` : ""}`;
 
   return {
@@ -46,11 +46,10 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
   const activeVersion = version || game.version;
   const activeSize = olderVersionObj ? olderVersionObj.size : game.size;
 
-  // Mirror Routing (Option A):
-  // 1. Primary APKMirror link constructed dynamically for exact game + version
-  // 2. Secondary APKPure link constructed dynamically for game version history archive
-  // 3. Custom downloadUrl if specified, or official Play Store listing
-  const apkMirrorUrl = getApkMirrorUrl(game, activeVersion);
+  // Download routing:
+  // 1. Custom downloadUrl if specified (owned/hosted file)
+  // 2. Direct APKPure app page constructed dynamically from package name
+  // 3. Official Play Store listing as fallback
   const apkPureUrl = getApkPureUrl(game, activeVersion);
   const customOrDriveUrl = olderVersionObj?.downloadUrl || game.downloadUrl;
 
@@ -69,7 +68,7 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
 
         {isOlderVersion ? (
           <span className="game-card-category" style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: "1rem", backgroundColor: "rgba(0, 212, 255, 0.2)", color: "var(--accent-blue)" }}>
-            <Server size={14} /> Older Release Version (APK Mirror Archive)
+            <Server size={14} /> Previous Release Version
           </span>
         ) : (
           <span className="game-card-category" style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: "1rem", backgroundColor: "rgba(0, 255, 136, 0.2)", color: "var(--accent-green)" }}>
@@ -83,7 +82,6 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
 
         <DownloadTimer
           downloadUrl={customOrDriveUrl}
-          apkMirrorUrl={apkMirrorUrl}
           apkPureUrl={apkPureUrl}
           playStoreUrl={game.playStoreUrl}
           version={activeVersion}

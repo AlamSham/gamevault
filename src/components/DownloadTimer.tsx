@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, CheckCircle2, ShieldCheck, ExternalLink, Smartphone } from "lucide-react";
+import { Download, CheckCircle2, ShieldCheck, ExternalLink, Smartphone, Server } from "lucide-react";
 
 interface DownloadTimerProps {
   downloadUrl?: string;
-  apkMirrorUrl?: string;
   apkPureUrl?: string;
   playStoreUrl?: string;
   version: string;
@@ -15,7 +14,6 @@ interface DownloadTimerProps {
 
 export default function DownloadTimer({
   downloadUrl,
-  apkMirrorUrl,
   apkPureUrl,
   playStoreUrl,
   version,
@@ -23,38 +21,35 @@ export default function DownloadTimer({
   isOlderVersion = false,
 }: DownloadTimerProps) {
   const [countdown, setCountdown] = useState(5);
-  const [ready, setReady] = useState(false);
+  const ready = countdown <= 0;
 
   useEffect(() => {
-    if (countdown > 0) {
-      const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
-      return () => clearTimeout(timer);
-    } else {
-      setReady(true);
-    }
+    if (countdown <= 0) return;
+    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
+    return () => clearTimeout(timer);
   }, [countdown]);
 
-  const primaryUrl = apkMirrorUrl || downloadUrl || playStoreUrl || "#";
-  const secondaryUrl = apkPureUrl || downloadUrl;
+  const primaryUrl = downloadUrl || apkPureUrl || playStoreUrl || "#";
+  const backupUrl = playStoreUrl || apkPureUrl;
 
   return (
     <>
       {!ready ? (
         <div style={{ padding: "2.5rem 1.5rem", background: "var(--bg-tertiary)", borderRadius: "var(--radius-lg)", margin: "1.5rem 0", border: "1px solid var(--border-color)" }}>
           <p style={{ fontSize: "1.1rem", marginBottom: "0.5rem", fontWeight: 600 }}>
-            Preparing secure download links for {gameName} (v{version}):
+            Preparing your secure download for {gameName} (v{version}):
           </p>
           <div style={{ fontSize: "3.8rem", fontWeight: 900, color: "var(--accent-green)", margin: "0.5rem 0", fontFamily: "monospace" }}>
             {countdown}s
           </div>
           <p style={{ fontSize: "0.85rem", color: "var(--text-tertiary)" }}>
-            Checking APK signature & preparing high-speed mirror servers...
+            Verifying the file signature & encrypting your download link...
           </p>
         </div>
       ) : (
         <div style={{ margin: "2rem 0", display: "flex", flexDirection: "column", gap: "1rem", alignItems: "center" }}>
           <div style={{ width: "100%", maxWidth: 480, display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-            {/* SERVER 1 - APKMIRROR */}
+            {/* PRIMARY - GAMEVAULT SECURE SERVER */}
             <a
               href={primaryUrl}
               target="_blank"
@@ -76,13 +71,13 @@ export default function DownloadTimer({
                 fontWeight: 700,
               }}
             >
-              <Download size={20} /> Download v{version} (Server 1 — APKMirror) <ExternalLink size={16} />
+              <Download size={20} /> Download {gameName} APK v{version} <ExternalLink size={16} />
             </a>
 
-            {/* SERVER 2 - APKPURE */}
-            {secondaryUrl && (
+            {/* BACKUP SERVER */}
+            {backupUrl && (
               <a
-                href={secondaryUrl}
+                href={backupUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -101,7 +96,7 @@ export default function DownloadTimer({
                   fontWeight: 600,
                 }}
               >
-                <ShieldCheck size={18} color="var(--accent-blue)" /> Mirror Server 2 (APKPure Archive) <ExternalLink size={14} />
+                <Server size={18} color="var(--accent-blue)" /> Backup Server — Direct Link <ExternalLink size={14} />
               </a>
             )}
 
@@ -128,7 +123,7 @@ export default function DownloadTimer({
           </div>
 
           <p style={{ fontSize: "0.8rem", color: "var(--accent-green)", marginTop: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
-            <CheckCircle2 size={14} /> 100% Virus-Free Verified Original APK Mirror
+            <CheckCircle2 size={14} /> 100% Virus-Free Verified by GameVault Security
           </p>
         </div>
       )}

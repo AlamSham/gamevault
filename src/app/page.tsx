@@ -44,12 +44,12 @@ export default function HomePage() {
               <div className="stat-label">Verified Games</div>
             </div>
             <div className="hero-stat">
-              <div className="stat-number">10M+</div>
-              <div className="stat-label">Downloads</div>
+              <div className="stat-number">100%</div>
+              <div className="stat-label">Virus-Free Checked</div>
             </div>
             <div className="hero-stat">
-              <div className="stat-number">4.8★</div>
-              <div className="stat-label">User Rating</div>
+              <div className="stat-number">24/7</div>
+              <div className="stat-label">Free Access</div>
             </div>
           </div>
         </div>

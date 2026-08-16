@@ -989,7 +989,7 @@ export const GAMES: Game[] = [
       "🏁🏆",
       "🚗✨"
     ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GlsoftAsphalt9"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftA9HM"
   },
   {
     "id": "real-cricket-24",
@@ -1099,7 +1099,7 @@ export const GAMES: Game[] = [
       "🏆🇮🇳",
       "🎮🏏"
     ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nautilusmobile.realcricket"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nautilus.realcricket"
   },
   {
     "id": "temple-run-2",
@@ -1405,7 +1405,7 @@ export const GAMES: Game[] = [
     "relatedGames": [
       "ludo-king",
       "carrom-pool",
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "real-cricket-24"
     ],
     "screenshots": [
@@ -1939,7 +1939,7 @@ export const GAMES: Game[] = [
       "🏎️💨",
       "🎮🎯"
     ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb2"
   },
   {
     "id": "clash-royale",
@@ -2348,7 +2348,7 @@ export const GAMES: Game[] = [
       }
     ],
     "relatedGames": [
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "real-cricket-24",
       "8-ball-pool",
       "score-hero"
@@ -2361,111 +2361,7 @@ export const GAMES: Game[] = [
     ],
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile"
   },
-  {
-    "id": "dream-league-soccer",
-    "name": "Dream League Soccer 2024",
-    "developer": "First Touch Games",
-    "category": "sports",
-    "version": "11.0.1",
-    "size": "480 MB",
-    "androidReq": "5.0+",
-    "rating": 4.3,
-    "downloads": "100M+",
-    "lastUpdated": "August 2026",
-    "icon": "⚽",
-    "iconColor": "#4CAF50",
-    "description": "Dream League Soccer 2024 lets you build your dream team from over 4,000 licensed players, develop your stadium, and compete in divisions to rise to legendary status. With realistic 3D graphics, fluid animations, and intuitive controls, DLS delivers a console-like football experience on mobile. Manage every aspect of your club from transfers to tactics.",
-    "features": [
-      "4,000+ FIFPro licensed players",
-      "Build and upgrade your own stadium",
-      "6 divisions to conquer",
-      "Online multiplayer matches",
-      "Customize kits and formations",
-      "Realistic player animations",
-      "AI opponents with smart tactics",
-      "Seasonal events and rewards"
-    ],
-    "review": "DLS 2024 is the most complete football management game on mobile. Building your team from scratch and growing your stadium is incredibly satisfying. The gameplay is smooth with responsive controls. Licensed players add authenticity. It's the perfect balance of management and action.",
-    "whatsNew": "Updated player database 2024! New stadium upgrades. Improved AI. New celebrations and skill moves.",
-    "pros": [
-      "Licensed players add realism",
-      "Build your own stadium",
-      "Great offline gameplay",
-      "Smooth 3D graphics"
-    ],
-    "cons": [
-      "Slow initial progression",
-      "Some players are hard to acquire",
-      "Ads between matches",
-      "Limited multiplayer options"
-    ],
-    "installSteps": [
-      {
-        "title": "Download APK",
-        "desc": "Click the download button above to get the latest APK file for this game."
-      },
-      {
-        "title": "Enable Unknown Sources",
-        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
-      },
-      {
-        "title": "Locate & Install",
-        "desc": "Open your file manager, find the APK in Downloads folder, tap it and press 'Install'."
-      },
-      {
-        "title": "Open the Game",
-        "desc": "Once installed, tap 'Open' to launch the game."
-      },
-      {
-        "title": "Enjoy Playing!",
-        "desc": "Complete the tutorial if any, and start enjoying the game!"
-      }
-    ],
-    "olderVersions": [
-      {
-        "version": "10.2",
-        "date": "July 2026",
-        "size": "475 MB"
-      },
-      {
-        "version": "10.1",
-        "date": "June 2026",
-        "size": "470 MB"
-      },
-      {
-        "version": "10.0",
-        "date": "May 2026",
-        "size": "465 MB"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Can I play offline?",
-        "a": "Yes! Career mode works fully offline."
-      },
-      {
-        "q": "Are players licensed?",
-        "a": "Yes, DLS features 4,000+ FIFPro licensed real players."
-      },
-      {
-        "q": "How do I get better players?",
-        "a": "Win matches, earn coins, and scout/buy players from the transfer market."
-      }
-    ],
-    "relatedGames": [
-      "fifa-mobile",
-      "real-cricket-24",
-      "8-ball-pool",
-      "score-hero"
-    ],
-    "screenshots": [
-      "⚽🏟️",
-      "🏆⭐",
-      "👥🎮",
-      "⚡💪"
-    ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.firsttouchgames.dls7"
-  },
+  
   {
     "id": "angry-birds-2",
     "name": "Angry Birds 2",
@@ -8020,7 +7916,7 @@ export const GAMES: Game[] = [
       }
     ],
     "relatedGames": [
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "fifa-mobile",
       "8-ball-pool",
       "real-cricket-24"
@@ -8626,7 +8522,7 @@ export const GAMES: Game[] = [
       }
     ],
     "relatedGames": [
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "fifa-mobile",
       "brawl-stars",
       "stumble-guys"
@@ -10040,7 +9936,7 @@ export const GAMES: Game[] = [
       }
     ],
     "relatedGames": [
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "fifa-mobile",
       "score-hero",
       "real-cricket-24"
@@ -10141,7 +10037,7 @@ export const GAMES: Game[] = [
       }
     ],
     "relatedGames": [
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "fifa-mobile",
       "score-hero",
       "8-ball-pool"
@@ -10243,7 +10139,7 @@ export const GAMES: Game[] = [
     ],
     "relatedGames": [
       "8-ball-pool",
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "badminton-clash",
       "rocket-league-sideswipe"
     ],
@@ -10950,7 +10846,7 @@ export const GAMES: Game[] = [
     ],
     "relatedGames": [
       "real-cricket-24",
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "8-ball-pool",
       "stick-cricket"
     ],
@@ -11052,7 +10948,7 @@ export const GAMES: Game[] = [
     "relatedGames": [
       "real-cricket-24",
       "wcc3",
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "8-ball-pool"
     ],
     "screenshots": [
@@ -14123,96 +14019,7 @@ export const GAMES: Game[] = [
     ],
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.netease.ch"
   },
-  {
-    "id": "rules-of-survival",
-    "name": "Rules of Survival",
-    "developer": "NetEase Games",
-    "category": "action",
-    "version": "1.61.0",
-    "size": "1.5 GB",
-    "androidReq": "5.0+",
-    "rating": 4,
-    "downloads": "50M+",
-    "lastUpdated": "August 2026",
-    "icon": "🪂",
-    "iconColor": "#E65100",
-    "description": "Rules of Survival is an epic battle royale game where up to 300 players drop onto a massive island to compete for survival.",
-    "features": [
-      "300-player battle royale",
-      "Huge 8x8 km map",
-      "Vehicles & air drops",
-      "Squad & solo modes"
-    ],
-    "review": "Massive player count per match creates non-stop survival action.",
-    "whatsNew": "Season rewards and weapon balancing.",
-    "pros": [
-      "300 player matches",
-      "Massive map",
-      "Fast action"
-    ],
-    "cons": [
-      "Large file size",
-      "Server ping variations"
-    ],
-    "installSteps": [
-      {
-        "title": "Download APK",
-        "desc": "Click the download button above to get the latest APK file for this game."
-      },
-      {
-        "title": "Enable Unknown Sources",
-        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
-      },
-      {
-        "title": "Locate & Install",
-        "desc": "Open your file manager, find the APK in Downloads folder, tap it and press 'Install'."
-      },
-      {
-        "title": "Open the Game",
-        "desc": "Once installed, tap 'Open' to launch the game."
-      },
-      {
-        "title": "Enjoy Playing!",
-        "desc": "Complete the tutorial if any, and start enjoying the game!"
-      }
-    ],
-    "olderVersions": [
-      {
-        "version": "1.60.0",
-        "date": "July 2026",
-        "size": "1.4 GB"
-      },
-      {
-        "version": "1.59.0",
-        "date": "June 2026",
-        "size": "1.4 GB"
-      },
-      {
-        "version": "1.58.0",
-        "date": "May 2026",
-        "size": "1.3 GB"
-      }
-    ],
-    "faq": [
-      {
-        "q": "How many players per match?",
-        "a": "Up to 300 players in special modes."
-      }
-    ],
-    "relatedGames": [
-      "pubg-mobile",
-      "free-fire-max",
-      "knives-out",
-      "blood-strike"
-    ],
-    "screenshots": [
-      "🪂🏝️",
-      "🔫💥",
-      "🏆⭐",
-      "🎮👥"
-    ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.netease.ch"
-  },
+  
   {
     "id": "knives-out",
     "name": "Knives Out",
@@ -14291,7 +14098,6 @@ export const GAMES: Game[] = [
     ],
     "relatedGames": [
       "pubg-mobile",
-      "rules-of-survival",
       "free-fire-max",
       "cyber-hunter"
     ],
@@ -17878,7 +17684,7 @@ export const GAMES: Game[] = [
     ],
     "relatedGames": [
       "score-hero",
-      "dream-league-soccer",
+      "dream-league-soccer-2026",
       "fifa-mobile",
       "8-ball-pool"
     ],
@@ -17890,95 +17696,7 @@ export const GAMES: Game[] = [
     ],
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.firsttouchgames.smp"
   },
-  {
-    "id": "clash-of-clans-th16",
-    "name": "Clash of Clans TH16",
-    "developer": "Supercell",
-    "category": "strategy",
-    "version": "16.0.25",
-    "size": "280 MB",
-    "androidReq": "5.0+",
-    "rating": 4.6,
-    "downloads": "500M+",
-    "lastUpdated": "August 2026",
-    "icon": "🏰",
-    "iconColor": "#FFD700",
-    "description": "Experience Town Hall 16 in Clash of Clans! Unlock nature-themed defenses, the merged Multi-Archer Tower and Ricochet Cannon, the Electro Titan, and Hero Equipment!",
-    "features": [
-      "Town Hall 16 merged defenses",
-      "Hero Equipment customization",
-      "Electro Titan troop",
-      "Root Rider & Spirit Fox pet"
-    ],
-    "review": "TH16 brings fresh strategy and game-changing hero equipment customizability.",
-    "whatsNew": "TH16 update with new merged defenses and Hero Equipment!",
-    "pros": [
-      "Fresh TH16 mechanics",
-      "Hero Equipment customization",
-      "Huge active clan community"
-    ],
-    "cons": [
-      "Upgrade times are long"
-    ],
-    "installSteps": [
-      {
-        "title": "Download APK",
-        "desc": "Click the download button above to get the latest APK file for this game."
-      },
-      {
-        "title": "Enable Unknown Sources",
-        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
-      },
-      {
-        "title": "Locate & Install",
-        "desc": "Open your file manager, find the APK in Downloads folder, tap it and press 'Install'."
-      },
-      {
-        "title": "Open the Game",
-        "desc": "Once installed, tap 'Open' to launch the game."
-      },
-      {
-        "title": "Enjoy Playing!",
-        "desc": "Complete the tutorial if any, and start enjoying the game!"
-      }
-    ],
-    "olderVersions": [
-      {
-        "version": "16.0.20",
-        "date": "July 2026",
-        "size": "275 MB"
-      },
-      {
-        "version": "16.0.15",
-        "date": "June 2026",
-        "size": "270 MB"
-      },
-      {
-        "version": "16.0.10",
-        "date": "May 2026",
-        "size": "265 MB"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Does this include TH16?",
-        "a": "Yes, includes Town Hall 16 merged defenses and Hero Equipment."
-      }
-    ],
-    "relatedGames": [
-      "clash-of-clans",
-      "clash-royale",
-      "brawl-stars",
-      "boom-beach"
-    ],
-    "screenshots": [
-      "🏰⚔️",
-      "⚡🐉",
-      "🏆⭐",
-      "🎮🔥"
-    ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans"
-  },
+  
   {
     "id": "nova-legacy",
     "name": "N.O.V.A. Legacy",
@@ -19407,95 +19125,7 @@ export const GAMES: Game[] = [
     ],
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.belkagames.clockmaker"
   },
-  {
-    "id": "subway-surfers-tokyo",
-    "name": "Subway Surfers Tokyo",
-    "developer": "SYBO Games",
-    "category": "arcade",
-    "version": "3.28.0",
-    "size": "175 MB",
-    "androidReq": "5.0+",
-    "rating": 4.5,
-    "downloads": "100M+",
-    "lastUpdated": "August 2026",
-    "icon": "🌸",
-    "iconColor": "#E91E63",
-    "description": "Run through the cherry blossom-filled streets of Tokyo in Subway Surfers World Tour Tokyo edition! Dash past neon lights and historic temples with Harumi!",
-    "features": [
-      "Tokyo World Tour theme",
-      "Cherry blossom visuals",
-      "Harumi character & board",
-      "Endless runner fun"
-    ],
-    "review": "One of the most beautiful World Tour editions with vibrant Tokyo aesthetics.",
-    "whatsNew": "Tokyo World Tour edition active!",
-    "pros": [
-      "Beautiful Tokyo theme",
-      "Smooth running",
-      "Plays offline"
-    ],
-    "cons": [
-      "Ad breaks"
-    ],
-    "installSteps": [
-      {
-        "title": "Download APK",
-        "desc": "Click the download button above to get the latest APK file for this game."
-      },
-      {
-        "title": "Enable Unknown Sources",
-        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
-      },
-      {
-        "title": "Locate & Install",
-        "desc": "Open your file manager, find the APK in Downloads folder, tap it and press 'Install'."
-      },
-      {
-        "title": "Open the Game",
-        "desc": "Once installed, tap 'Open' to launch the game."
-      },
-      {
-        "title": "Enjoy Playing!",
-        "desc": "Complete the tutorial if any, and start enjoying the game!"
-      }
-    ],
-    "olderVersions": [
-      {
-        "version": "3.27.0",
-        "date": "July 2026",
-        "size": "170 MB"
-      },
-      {
-        "version": "3.26.0",
-        "date": "June 2026",
-        "size": "165 MB"
-      },
-      {
-        "version": "3.25.0",
-        "date": "May 2026",
-        "size": "160 MB"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Is Tokyo edition offline?",
-        "a": "Yes, plays 100% offline."
-      }
-    ],
-    "relatedGames": [
-      "subway-surfers",
-      "subway-surfers-city",
-      "temple-run-2",
-      "sonic-dash"
-    ],
-    "screenshots": [
-      "🌸🏃‍♂️",
-      "⛩️💰",
-      "⭐🏆",
-      "🎮⚡"
-    ],
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"
-  },
+  
   {
     "id": "candy-crush-soda",
     "name": "Candy Crush Soda Saga",
@@ -20296,6 +19926,532 @@ export const GAMES: Game[] = [
       "🎮⚡"
     ],
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.aceviral.motox3m"
+  },
+  {
+    "id": "block-blast",
+    "name": "Block Blast!",
+    "developer": "HungryStudio",
+    "category": "puzzle",
+    "version": "67.10.4",
+    "size": "48 MB",
+    "androidReq": "5.1+",
+    "rating": 4.8,
+    "downloads": "500M+",
+    "lastUpdated": "August 2026",
+    "icon": "🧱",
+    "iconColor": "#FF5722",
+    "description": "Block Blast! is the viral block puzzle game that took 2025-2026 by storm. Drag and drop colorful blocks onto an 8x8 grid, complete rows and columns to clear them, and chain combos for huge scores. Simple one-touch controls, satisfying physics, and endless free play make it the most addictive puzzle game on Android right now. No internet needed — perfect for offline play on the bus, at home, or during breaks.",
+    "features": [
+      "Simple drag-and-drop block puzzle gameplay",
+      "Hundreds of levels with increasing difficulty",
+      "Free combo chains and special block power-ups",
+      "Complete rows, columns, and squares to clear",
+      "Vibrant colors with smooth animations",
+      "100% playable offline — no internet needed",
+      "Lightweight — runs on any Android phone",
+      "Daily challenges with bonus rewards"
+    ],
+    "review": "Block Blast! deserves every bit of its viral success. The core loop is pure dopamine — dropping blocks into perfect fits is instantly satisfying, and the combo system keeps you chasing higher scores. It's the perfect 'one more game' trap: sessions start as 'just one puzzle' and end an hour later. The game never forces ads or paywalls aggressively, which is rare for the genre. On a budget phone it runs flawlessly. If you loved classic Tetris or 1010!, this is the modern evolution done right.",
+    "whatsNew": "New puzzle packs added! Summer event with limited-time block themes. Performance improvements and smoother animations on low-end devices.",
+    "pros": [
+      "Extremely addictive one-touch gameplay",
+      "Completely free with optional ads",
+      "Works offline anywhere",
+      "Lightweight — only ~50 MB",
+      "Perfect for quick gaming sessions"
+    ],
+    "cons": [
+      "Occasional ads between games",
+      "No multiplayer mode",
+      "Can feel repetitive for some players"
+    ],
+    "installSteps": [
+      {
+        "title": "Download the APK",
+        "desc": "Click the download button above to get the latest Block Blast! APK file."
+      },
+      {
+        "title": "Enable Unknown Sources",
+        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
+      },
+      {
+        "title": "Locate the File",
+        "desc": "Open your file manager and navigate to the Downloads folder to find the APK file."
+      },
+      {
+        "title": "Install the APK",
+        "desc": "Tap on the APK file and press 'Install'. Wait for the installation to complete."
+      },
+      {
+        "title": "Start Playing",
+        "desc": "Launch Block Blast! and start clearing rows and columns!"
+      }
+    ],
+    "olderVersions": [
+      {
+        "version": "66.9.1",
+        "date": "July 2026",
+        "size": "47 MB"
+      },
+      {
+        "version": "65.8.0",
+        "date": "June 2026",
+        "size": "46 MB"
+      },
+      {
+        "version": "64.5.2",
+        "date": "May 2026",
+        "size": "45 MB"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Block Blast! free to play?",
+        "a": "Yes, Block Blast! is completely free to download and play. Ads are optional and you can disable them with a small one-time purchase."
+      },
+      {
+        "q": "Can I play Block Blast! offline?",
+        "a": "Absolutely. Block Blast! works 100% offline — no internet connection required."
+      },
+      {
+        "q": "What devices support Block Blast!?",
+        "a": "Block Blast! runs on Android 5.1+ and is lightweight enough for even the oldest budget phones."
+      },
+      {
+        "q": "How do I get high scores in Block Blast!?",
+        "a": "Plan ahead, keep the board clean, and save space for large blocks. Chain combos by clearing multiple rows at once for bonus points."
+      }
+    ],
+    "relatedGames": [
+      "2048",
+      "helix-jump",
+      "stack-ball",
+      "knife-hit",
+      "hole-io"
+    ],
+    "screenshots": [
+      "🧱✨",
+      "🎨📱",
+      "🏆⭐",
+      "🧩💥"
+    ],
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.block.juggle"
+  },
+  {
+    "id": "dream-league-soccer-2026",
+    "name": "Dream League Soccer 2026",
+    "developer": "First Touch Games",
+    "category": "sports",
+    "version": "12.17",
+    "size": "980 MB",
+    "androidReq": "6.0+",
+    "rating": 4.5,
+    "downloads": "100M+",
+    "lastUpdated": "August 2026",
+    "icon": "⚽",
+    "iconColor": "#4CAF50",
+    "description": "Dream League Soccer 2026 brings console-quality football to your Android. Build your dream team with licensed superstars, manage transfers, and compete in leagues, cups, and online seasons against players worldwide. With realistic physics, smooth 60fps gameplay, and deep career management, DLS 2026 remains the most popular free football manager on mobile. Customize kits, stadiums, and tactics as you rise from the bottom league to global glory.",
+    "features": [
+      "Build and manage your ultimate football club",
+      "Licensed players with realistic ratings",
+      "Real-time online seasons and tournaments",
+      "Custom tactics, formations, and training",
+      "Transfer market with player auctions",
+      "60 FPS smooth gameplay with realistic physics",
+      "Customizable kits, crests, and stadium",
+      "Playable offline in career mode"
+    ],
+    "review": "Dream League Soccer 2026 continues to deliver the best free football simulation on Android. The on-pitch action feels remarkably fluid — passing, dribbling, and shooting are responsive and satisfying. The career mode depth is impressive: transfers, training, and youth development give you real management decisions. Online seasons add competitive longevity. Graphics are sharp even on mid-range devices. The main criticism is the energy system and grinding for coins, but patient players can build a world-class squad without spending a rupee. A must-download for football fans.",
+    "whatsNew": "New 2026 season squads and player ratings! Improved AI defending and goalkeeper AI. New stadium customization options. Transfer market revamp with live auctions.",
+    "pros": [
+      "Best free football game on Android",
+      "Deep career management mode",
+      "Smooth 60 FPS gameplay",
+      "Active online multiplayer",
+      "Works offline"
+    ],
+    "cons": [
+      "Large download size (~1 GB)",
+      "Coin grinding can be slow",
+      "Energy system limits matches"
+    ],
+    "installSteps": [
+      {
+        "title": "Download the APK",
+        "desc": "Click the download button above to get the latest Dream League Soccer 2026 APK."
+      },
+      {
+        "title": "Enable Unknown Sources",
+        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
+      },
+      {
+        "title": "Install the APK",
+        "desc": "Tap the APK file and press 'Install'. Wait for installation to complete."
+      },
+      {
+        "title": "Download Game Data",
+        "desc": "Launch the game and download additional data (~800 MB). Use WiFi recommended."
+      },
+      {
+        "title": "Start Your Career",
+        "desc": "Create your club and begin your journey to the top league!"
+      }
+    ],
+    "olderVersions": [
+      {
+        "version": "12.10",
+        "date": "June 2026",
+        "size": "940 MB"
+      },
+      {
+        "version": "12.02",
+        "date": "April 2026",
+        "size": "910 MB"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Dream League Soccer 2026 free?",
+        "a": "Yes, DLS 2026 is free to play with optional in-app purchases for coins and gems."
+      },
+      {
+        "q": "Can I play Dream League Soccer 2026 offline?",
+        "a": "Yes, career mode works fully offline after downloading the game data."
+      },
+      {
+        "q": "How much storage does DLS 2026 need?",
+        "a": "The APK is about 300 MB plus ~700 MB of game data, so keep at least 2 GB free."
+      },
+      {
+        "q": "How do I get coins quickly in DLS 2026?",
+        "a": "Win online seasons, complete daily objectives, watch ad rewards, and flip players on the transfer market for profit."
+      }
+    ],
+    "relatedGames": [
+      "fifa-mobile",
+      "stick-cricket",
+      "head-soccer",
+      "score-hero"
+    ],
+    "screenshots": [
+      "⚽🏆",
+      "🏟️🌟",
+      "🛡️🥅",
+      "👟💨"
+    ],
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.firsttouchgames.dls7"
+  },
+  {
+    "id": "efootball-2026",
+    "name": "eFootball 2026",
+    "developer": "Konami",
+    "category": "sports",
+    "version": "8.5.0",
+    "size": "2.4 GB",
+    "androidReq": "7.0+",
+    "rating": 4.2,
+    "downloads": "50M+",
+    "lastUpdated": "August 2026",
+    "icon": "⚽",
+    "iconColor": "#3F51B5",
+    "description": "eFootball 2026 (formerly PES) is Konami's flagship football simulation with officially licensed teams and real-player likeness. Experience authentic 11v11 matches with advanced AI, smooth animations, and console-quality graphics. Dream Team mode lets you collect player cards and build your ultimate squad, then compete in live events and ranked matches worldwide. Cross-platform play means you can challenge players on console and PC too.",
+    "features": [
+      "Officially licensed teams and leagues",
+      "Dream Team — collect and build player cards",
+      "Cross-platform multiplayer vs console & PC",
+      "Advanced AI with realistic match intelligence",
+      "Motion-captured animations and celebrations",
+      "Live events and ranked seasons",
+      "Team customization with kits and formations",
+      "In-depth training and skill development"
+    ],
+    "review": "eFootball 2026 is the most authentic football sim on mobile. The match engine is a huge step up from its PES predecessor — passing weight, player movement, and shot physics feel genuinely realistic. Dream Team mode is the heart of the game: pulling high-rated cards and crafting your XI is deeply engaging. The free-to-play model is fairer than FIFA Mobile's. Graphics are impressive on flagships. Downsides: the game demands serious storage (2.4 GB), requires strong internet for most modes, and AI difficulty spikes can frustrate. Overall, a must-have for serious football sim fans.",
+    "whatsNew": "New 2026 season update with latest player stats! Improved Dream Team UI. New featured events and legendary player cards. Performance optimizations for mid-range devices.",
+    "pros": [
+      "Most realistic football gameplay on mobile",
+      "Fair free-to-play model",
+      "Cross-platform play",
+      "Regular events and content updates",
+      "Officially licensed content"
+    ],
+    "cons": [
+      "Very large file size (2.4 GB)",
+      "Requires internet for most features",
+      "Demanding on older devices"
+    ],
+    "installSteps": [
+      {
+        "title": "Download the APK",
+        "desc": "Click the download button above to get the latest eFootball 2026 APK."
+      },
+      {
+        "title": "Enable Unknown Sources",
+        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
+      },
+      {
+        "title": "Install the APK",
+        "desc": "Tap the APK file and press 'Install'. Wait for installation to complete."
+      },
+      {
+        "title": "Download Game Data",
+        "desc": "Launch the game and download additional data (~2 GB). Use WiFi strongly recommended."
+      },
+      {
+        "title": "Build Your Dream Team",
+        "desc": "Complete the tutorial and start building your ultimate squad!"
+      }
+    ],
+    "olderVersions": [
+      {
+        "version": "8.4.0",
+        "date": "June 2026",
+        "size": "2.3 GB"
+      },
+      {
+        "version": "8.2.1",
+        "date": "April 2026",
+        "size": "2.2 GB"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is eFootball 2026 free to play?",
+        "a": "Yes, eFootball 2026 is free with optional in-app purchases for player cards and coins."
+      },
+      {
+        "q": "Does eFootball 2026 support cross-platform play?",
+        "a": "Yes, mobile players can compete against console and PC players in online modes."
+      },
+      {
+        "q": "How much storage does eFootball 2026 need?",
+        "a": "Around 2.4 GB total. Keep at least 4 GB free for smooth updates."
+      },
+      {
+        "q": "Can I play eFootball 2026 offline?",
+        "a": "Exhibition matches against AI are available offline, but most modes require an internet connection."
+      }
+    ],
+    "relatedGames": [
+      "fifa-mobile",
+      "dream-league-soccer-2026",
+      "wcc3",
+      "real-cricket-24"
+    ],
+    "screenshots": [
+      "⚽🏟️",
+      "🎯🥅",
+      "🏆👑",
+      "📱🔥"
+    ],
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=jp.konami.pesam"
+  },
+  {
+    "id": "delta-force",
+    "name": "Delta Force",
+    "developer": "Level Infinite",
+    "category": "action",
+    "version": "1.0.12",
+    "size": "1.8 GB",
+    "androidReq": "7.0+",
+    "rating": 4.4,
+    "downloads": "10M+",
+    "lastUpdated": "August 2026",
+    "icon": "🪖",
+    "iconColor": "#455A64",
+    "description": "Delta Force is the explosive new tactical shooter from the developers behind PUBG Mobile. Choose between Havoc Warfare — a 32v32 all-out battle with vehicles and destructible environments — or Extraction mode, where you loot, fight, and escape with your gear. Console-quality graphics, realistic gunplay, and intense squad tactics make Delta Force the hottest new shooter of 2026. Master operators with unique abilities and compete in ranked seasons.",
+    "features": [
+      "Havoc Warfare — 32v32 massive battles",
+      "Extraction mode with risk-reward loot system",
+      "Operators with unique tactical abilities",
+      "Realistic gunplay with weapon customization",
+      "Destructible environments and vehicles",
+      "Ranked seasons with exclusive rewards",
+      "Console-quality graphics with 60 FPS",
+      "Voice chat and squad play"
+    ],
+    "review": "Delta Force has quickly become the standout tactical shooter of 2026. Havoc Warfare delivers the large-scale chaos that made Battlefield famous, with vehicles, destruction, and 64 players fighting across massive maps. Extraction mode adds a tense risk-reward loop that keeps every match exciting. Gunplay feels weighty and rewarding — headshots are satisfying and weapon builds matter. Graphics are stunning even on mid-range phones. The grind for operators can be slow, but the core experience is polished and genuinely fun. A serious contender for the best mobile shooter this year.",
+    "whatsNew": "New season: 'Steel Rain' with new map, operator, and ranked rewards! Extraction mode balance changes. Improved anti-cheat system. Performance updates for low-end devices.",
+    "pros": [
+      "Huge 32v32 battles with vehicles",
+      "Tense extraction mode",
+      "Polished realistic gunplay",
+      "Great graphics on mobile",
+      "Regular seasonal content"
+    ],
+    "cons": [
+      "Large download (1.8 GB)",
+      "Requires strong internet connection",
+      "Matchmaking can be slow at off-peak hours"
+    ],
+    "installSteps": [
+      {
+        "title": "Download the APK",
+        "desc": "Click the download button above to get the latest Delta Force APK."
+      },
+      {
+        "title": "Enable Unknown Sources",
+        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
+      },
+      {
+        "title": "Install the APK",
+        "desc": "Tap the APK file and press 'Install'. Wait for installation to complete."
+      },
+      {
+        "title": "Download Game Data",
+        "desc": "Launch the game and download additional data (~1.5 GB). Use WiFi recommended."
+      },
+      {
+        "title": "Drop Into Battle",
+        "desc": "Choose your mode, squad up, and drop into the action!"
+      }
+    ],
+    "olderVersions": [
+      {
+        "version": "1.0.9",
+        "date": "June 2026",
+        "size": "1.7 GB"
+      },
+      {
+        "version": "1.0.5",
+        "date": "April 2026",
+        "size": "1.6 GB"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Delta Force free to play?",
+        "a": "Yes, Delta Force is free with optional in-app purchases for cosmetics and battle pass."
+      },
+      {
+        "q": "What are the system requirements for Delta Force?",
+        "a": "Android 7.0+ with at least 4 GB RAM recommended for the best experience."
+      },
+      {
+        "q": "Is Delta Force available in India?",
+        "a": "Yes, Delta Force is available globally on Android, unlike PUBG Mobile."
+      },
+      {
+        "q": "Can I play Delta Force on low-end devices?",
+        "a": "Yes, the game offers graphics settings that scale down to run on budget phones, though at lower fidelity."
+      }
+    ],
+    "relatedGames": [
+      "pubg-mobile",
+      "free-fire-max",
+      "standoff-2",
+      "apex-legends-mobile"
+    ],
+    "screenshots": [
+      "🪖💥",
+      "🎯🔫",
+      "🚁🏙️",
+      "⚔️🔥"
+    ],
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.proxima.dfm"
+  },
+  {
+    "id": "honor-of-kings",
+    "name": "Honor of Kings",
+    "developer": "Level Infinite",
+    "category": "action",
+    "version": "9.10.1",
+    "size": "1.2 GB",
+    "androidReq": "6.0+",
+    "rating": 4.5,
+    "downloads": "100M+",
+    "lastUpdated": "August 2026",
+    "icon": "🐉",
+    "iconColor": "#E91E63",
+    "description": "Honor of Kings is the world's most-played MOBA — over 100 million daily players battle in 5v5 arenas. Pick from 120+ heroes with unique abilities, master classic three-lane maps, and compete in ranked matches, tournaments, and esports events. Fast 10-minute matches, gorgeous visuals, and deep hero mechanics make it the definitive mobile MOBA. Global version brings cross-server play, live events, and constant hero releases.",
+    "features": [
+      "120+ heroes with unique abilities and roles",
+      "Classic 5v5 three-lane MOBA gameplay",
+      "Ranked seasons with exclusive rewards",
+      "Tournaments and esports events",
+      "Cross-server global matchmaking",
+      "Hero skins with animated effects",
+      "Fast 10-minute matches",
+      "Regular new hero and balance updates"
+    ],
+    "review": "Honor of Kings lives up to its massive reputation. The core MOBA loop is immaculate — each hero feels distinct, lane dynamics are deep, and 10-minute matches fit perfectly into mobile sessions. The global version is polished with smooth 60 FPS performance and stunning ability effects. Ranked play is genuinely competitive with good matchmaking. The sheer hero roster (120+) means endless team compositions. Skins are pricey but purely cosmetic. If you love MLBB or League of Legends, this is the highest-quality MOBA on Android — a guaranteed download for competitive players.",
+    "whatsNew": "New hero: 'Kui' the demon general! Season 12 ranked rewards revealed. New collaboration event with limited-time skins. Balance patch for 12 heroes. Performance improvements.",
+    "pros": [
+      "Best-in-class MOBA on mobile",
+      "Massive hero roster",
+      "Fast 10-minute matches",
+      "Competitive ranked system",
+      "Stunning visual effects"
+    ],
+    "cons": [
+      "Large download (1.2 GB)",
+      "Requires internet connection",
+      "Skin prices can be high"
+    ],
+    "installSteps": [
+      {
+        "title": "Download the APK",
+        "desc": "Click the download button above to get the latest Honor of Kings APK."
+      },
+      {
+        "title": "Enable Unknown Sources",
+        "desc": "Go to Settings → Security → Enable 'Install from Unknown Sources' or allow your browser to install apps."
+      },
+      {
+        "title": "Install the APK",
+        "desc": "Tap the APK file and press 'Install'. Wait for installation to complete."
+      },
+      {
+        "title": "Download Game Data",
+        "desc": "Launch the game and download additional data (~1 GB). Use WiFi recommended."
+      },
+      {
+        "title": "Enter the Arena",
+        "desc": "Complete the tutorial, pick your hero, and join the battle!"
+      }
+    ],
+    "olderVersions": [
+      {
+        "version": "9.9.0",
+        "date": "June 2026",
+        "size": "1.1 GB"
+      },
+      {
+        "version": "9.8.3",
+        "date": "April 2026",
+        "size": "1.1 GB"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Honor of Kings free to play?",
+        "a": "Yes, Honor of Kings is free with optional purchases for heroes and cosmetic skins."
+      },
+      {
+        "q": "Is Honor of Kings available globally?",
+        "a": "Yes, the global version is available in most countries including India, with cross-server matchmaking."
+      },
+      {
+        "q": "How long is a typical match?",
+        "a": "Around 10 minutes, though close games can stretch to 15-20 minutes."
+      },
+      {
+        "q": "What are the system requirements?",
+        "a": "Android 6.0+ and at least 3 GB RAM recommended for smooth 60 FPS gameplay."
+      }
+    ],
+    "relatedGames": [
+      "mobile-legends",
+      "arena-breakout",
+      "pixel-gun-3d",
+      "clash-royale"
+    ],
+    "screenshots": [
+      "🐉⚔️",
+      "🗡️🛡️",
+      "🏆👑",
+      "🔥💫"
+    ],
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.levelinfinite.sgameGlobal"
   }
 ];
 
@@ -20349,9 +20505,7 @@ export function getApkPureUrl(game: Game, version?: string): string {
   if (game.playStoreUrl) {
     const match = game.playStoreUrl.match(/id=([a-zA-Z0-9._]+)/);
     if (match && match[1]) {
-      const pkg = match[1];
-      const slug = game.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-      return `https://apkpure.com/${slug}/${pkg}/versions`;
+      return `https://apkpure.com/search?q=${encodeURIComponent(match[1])}`;
     }
   }
   return `https://apkpure.com/search?q=${encodeURIComponent(game.name)}`;

@@ -91,13 +91,6 @@ export default async function GameDetailPage({ params }: GamePageProps) {
       "@type": "Organization",
       name: game.developer,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: game.rating.toString(),
-      ratingCount: "18500",
-      bestRating: "5",
-      worstRating: "1",
-    },
     offers: {
       "@type": "Offer",
       price: "0",
@@ -336,7 +329,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
       {/* WHAT'S NEW */}
       {game.whatsNew && (
         <section style={{ margin: "2.5rem 0" }}>
-          <h2 style={{ marginBottom: "1rem" }}>🔄 What's New in Version {game.version}</h2>
+          <h2 style={{ marginBottom: "1rem" }}>🔄 What&apos;s New in Version {game.version}</h2>
           <div style={{ background: "var(--bg-card)", padding: "1.25rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--accent-blue)" }}>
             <p>{game.whatsNew}</p>
           </div>

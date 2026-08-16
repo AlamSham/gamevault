@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
     description: blog.excerpt,
     alternates: { canonical: url },
     openGraph: { title, description: blog.excerpt, url, type: "article" },
+    twitter: { card: "summary_large_image", title, description: blog.excerpt },
   };
 }
 
@@ -66,7 +67,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         <span style={{ color: "var(--text-primary)" }}>{blog.title}</span>
       </nav>
 
-      <article style={{ marginTop: "2rem" }}>
+      <article style={{ marginTop: "2rem" }} lang={blog.lang === "hi" ? "hi" : "en"}>
         <div style={{ fontSize: "4rem", marginBottom: "1rem" }}>{blog.icon}</div>
         <span className="game-card-category" style={{ position: "static", marginBottom: "1rem", display: "inline-block" }}>
           {blog.category}
