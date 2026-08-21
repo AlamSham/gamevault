@@ -31,6 +31,7 @@ export default function Navbar() {
           <span className="search-icon"><Search size={16} /></span>
           <input
             type="text"
+            name="q"
             placeholder="Search 200+ Android games..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

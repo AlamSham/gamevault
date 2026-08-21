@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
   const blog = getBlogById(id);
   if (!blog) return { title: "Article Not Found | GameVault APK" };
 
-  const title = `${blog.title} — GameVault APK`;
+  const title = blog.title;
   const url = `https://gamevaultinfo.com/blog/${blog.id}`;
 
   return {

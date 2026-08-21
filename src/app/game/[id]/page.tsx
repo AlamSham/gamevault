@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     };
   }
 
-  const title = `${game.name} APK Download v${game.version} (100% Safe & Direct) — GameVault`;
+  const title = `${game.name} APK Download v${game.version} (100% Safe & Direct)`;
   const description = `Download ${game.name} APK v${game.version} for Android (${game.size}). Verified virus-free direct link, system requirements, older version archive & features.`;
   const url = `https://gamevaultinfo.com/game/${game.id}`;
   const keywords = [

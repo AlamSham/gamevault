@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { BLOG_POSTS } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Android Gaming Blog, News, Tips & Guides (English + हिंदी) — GameVault APK",
+  title: "Android Gaming Blog, News, Tips & Guides (English + हिंदी)",
   description: "Read the latest Android gaming guides, top 10 game lists, FPS boost tutorials, APK download guides in English and Hindi on GameVault APK.",
   alternates: { canonical: "https://gamevaultinfo.com/blog" },
 };
