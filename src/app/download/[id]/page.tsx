@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getGameById, getApkPureUrl } from "@/data/games";
+import { getGameById, getApkMirrorUrl } from "@/data/games";
 import DownloadTimer from "@/components/DownloadTimer";
 import { ShieldCheck, ArrowLeft, Server } from "lucide-react";
 
@@ -48,10 +48,11 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
 
   // Download routing:
   // 1. Custom downloadUrl if specified (owned/hosted file)
-  // 2. Direct APKPure app page constructed dynamically from package name
-  // 3. Official Play Store listing as fallback
-  const apkPureUrl = getApkPureUrl(game, activeVersion);
-  const customOrDriveUrl = olderVersionObj?.downloadUrl || game.downloadUrl;
+  // 2. Direct internal API route (/api/download) delivering verified APK stream
+  // 3. APKMirror & Play Store as reliable non-blocked backups
+  const apkMirrorUrl = getApkMirrorUrl(game, activeVersion);
+  const directApiUrl = `/api/download?id=${game.id}${version ? `&version=${encodeURIComponent(version)}` : ""}`;
+  const customOrDriveUrl = olderVersionObj?.downloadUrl || game.downloadUrl || directApiUrl;
 
   return (
     <div className="container" style={{ padding: "3rem 1.5rem", maxWidth: 800 }}>
@@ -82,7 +83,7 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
 
         <DownloadTimer
           downloadUrl={customOrDriveUrl}
-          apkPureUrl={apkPureUrl}
+          apkMirrorUrl={apkMirrorUrl}
           playStoreUrl={game.playStoreUrl}
           version={activeVersion}
           gameName={game.name}

@@ -20496,17 +20496,33 @@ export function getAllGameIds(): { id: string }[] {
   return GAMES.map(g => ({ id: g.id }));
 }
 
+export function getGamePackage(game: Game): string | null {
+  if (game.playStoreUrl && game.playStoreUrl.includes("id=")) {
+    const match = game.playStoreUrl.match(/id=([a-zA-Z0-9._]+)/);
+    if (match && match[1]) {
+      return match[1];
+    }
+  }
+  return null;
+}
+
 export function getApkMirrorUrl(game: Game, version?: string): string {
   const query = version ? `${game.name} ${version}` : game.name;
   return `https://www.apkmirror.com/?s=${encodeURIComponent(query)}`;
 }
 
 export function getApkPureUrl(game: Game, version?: string): string {
-  if (game.playStoreUrl) {
-    const match = game.playStoreUrl.match(/id=([a-zA-Z0-9._]+)/);
-    if (match && match[1]) {
-      return `https://apkpure.com/search?q=${encodeURIComponent(match[1])}`;
-    }
+  const pkg = getGamePackage(game);
+  if (pkg) {
+    return `https://apkpure.com/p/${pkg}`;
   }
   return `https://apkpure.com/search?q=${encodeURIComponent(game.name)}`;
+}
+
+export function getApkComboUrl(game: Game): string {
+  const pkg = getGamePackage(game);
+  if (pkg) {
+    return `https://apkcombo.com/pkg/${pkg}/`;
+  }
+  return `https://apkcombo.com/search/${encodeURIComponent(game.name)}`;
 }

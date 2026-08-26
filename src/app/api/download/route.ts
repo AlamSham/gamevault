@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getGameById } from "@/data/games";
+import { getGameById, getGamePackage } from "@/data/games";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -11,21 +11,21 @@ export async function GET(request: NextRequest) {
     return new NextResponse("Game file not found", { status: 404 });
   }
 
-  const activeVersion = version || game.version;
-  const fileName = `${game.id}-v${activeVersion}.apk`;
+  // 1. If self-hosted or custom downloadUrl is set, redirect to it
+  if (game.downloadUrl) {
+    return NextResponse.redirect(game.downloadUrl, 307);
+  }
 
-  // Dummy APK binary buffer header for instant browser file download test
-  const apkBuffer = Buffer.from(
-    `GameVault APK Verified File: ${game.name} (Version: ${activeVersion})\nDeveloper: ${game.developer}\nPackage: com.${game.id.replace(/-/g, "")}.apk`
-  );
+  // 2. Extract package name
+  const pkg = getGamePackage(game);
 
-  return new NextResponse(apkBuffer, {
-    status: 200,
-    headers: {
-      "Content-Type": "application/vnd.android.package-archive",
-      "Content-Disposition": `attachment; filename="${fileName}"`,
-      "Content-Length": apkBuffer.length.toString(),
-      "Cache-Control": "no-cache",
-    },
-  });
+  if (pkg) {
+    // Redirect to direct APK file download stream
+    const realApkStreamUrl = `https://d.apkpure.com/b/APK/${pkg}?version=latest`;
+    return NextResponse.redirect(realApkStreamUrl, 307);
+  }
+
+  // 3. Fallback to Google Play Store if no package match
+  const fallbackUrl = game.playStoreUrl || `https://www.apkmirror.com/?s=${encodeURIComponent(game.name)}`;
+  return NextResponse.redirect(fallbackUrl, 307);
 }

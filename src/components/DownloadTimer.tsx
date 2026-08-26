@@ -5,7 +5,7 @@ import { Download, CheckCircle2, ShieldCheck, ExternalLink, Smartphone, Server }
 
 interface DownloadTimerProps {
   downloadUrl?: string;
-  apkPureUrl?: string;
+  apkMirrorUrl?: string;
   playStoreUrl?: string;
   version: string;
   gameName: string;
@@ -14,7 +14,7 @@ interface DownloadTimerProps {
 
 export default function DownloadTimer({
   downloadUrl,
-  apkPureUrl,
+  apkMirrorUrl,
   playStoreUrl,
   version,
   gameName,
@@ -29,8 +29,8 @@ export default function DownloadTimer({
     return () => clearTimeout(timer);
   }, [countdown]);
 
-  const primaryUrl = downloadUrl || apkPureUrl || playStoreUrl || "#";
-  const backupUrl = playStoreUrl || apkPureUrl;
+  const primaryUrl = downloadUrl || playStoreUrl || "#";
+  const isDirectDownload = primaryUrl.startsWith("/api/download");
 
   return (
     <>
@@ -49,11 +49,12 @@ export default function DownloadTimer({
       ) : (
         <div style={{ margin: "2rem 0", display: "flex", flexDirection: "column", gap: "1rem", alignItems: "center" }}>
           <div style={{ width: "100%", maxWidth: 480, display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-            {/* PRIMARY - GAMEVAULT SECURE SERVER */}
+            {/* PRIMARY - GAMEVAULT DIRECT FAST SERVER */}
             <a
               href={primaryUrl}
-              target="_blank"
+              target={isDirectDownload ? "_self" : "_blank"}
               rel="noopener noreferrer"
+              download={isDirectDownload ? `${gameName.toLowerCase().replace(/[^a-z0-9]/g, "-")}-v${version}.apk` : undefined}
               className="game-card-download"
               style={{
                 height: 56,
@@ -74,10 +75,10 @@ export default function DownloadTimer({
               <Download size={20} /> Download {gameName} APK v{version} <ExternalLink size={16} />
             </a>
 
-            {/* BACKUP SERVER */}
-            {backupUrl && (
+            {/* BACKUP MIRROR SERVER (APKMirror - Non-blocked) */}
+            {apkMirrorUrl && (
               <a
-                href={backupUrl}
+                href={apkMirrorUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -96,7 +97,7 @@ export default function DownloadTimer({
                   fontWeight: 600,
                 }}
               >
-                <Server size={18} color="var(--accent-blue)" /> Backup Server — Direct Link <ExternalLink size={14} />
+                <Server size={18} color="var(--accent-blue)" /> Backup Server — APKMirror <ExternalLink size={14} />
               </a>
             )}
 

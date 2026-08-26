@@ -67,7 +67,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         <span style={{ color: "var(--text-primary)" }}>{blog.title}</span>
       </nav>
 
-      <article style={{ marginTop: "2rem" }} lang={blog.lang === "hi" ? "hi" : "en"}>
+      <article style={{ marginTop: "2rem" }} lang="en">
         <div style={{ fontSize: "4rem", marginBottom: "1rem" }}>{blog.icon}</div>
         <span className="game-card-category" style={{ position: "static", marginBottom: "1rem", display: "inline-block" }}>
           {blog.category}

@@ -160,62 +160,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "August 11, 2026",
     "readTime": "9 min read",
     "content": "<h2>Top 10 Shooting Games for Android 2026</h2>\n<p>The mobile shooting genre has exploded in 2026. Here are our top 10 picks, ranked by graphics, gameplay depth, and overall fun.</p>\n<h3>1. PUBG Mobile</h3>\n<p>The battle royale giant. 100-player matches, realistic gunplay, and constant updates keep it at the top. <a href=\"/game/pubg-mobile\">Download PUBG Mobile APK</a></p>\n<h3>2. Delta Force</h3>\n<p>The 2026 breakout tactical shooter with 32v32 battles and an intense extraction mode. <a href=\"/game/delta-force\">Download Delta Force APK</a></p>\n<h3>3. Free Fire MAX</h3>\n<p>Garena's HD battle royale — the most popular shooter in India and Southeast Asia. <a href=\"/game/free-fire-max\">Download Free Fire MAX APK</a></p>\n<h3>4. Call of Duty: Mobile</h3>\n<p>Console-quality FPS with multiplayer and battle royale modes. <a href=\"/game/call-of-duty-mobile\">Download COD Mobile APK</a></p>\n<h3>5. Standoff 2</h3>\n<p>The best CS:GO-style competitive shooter on low-end phones. <a href=\"/game/standoff-2\">Download Standoff 2 APK</a></p>\n<h3>6. Critical Ops</h3>\n<p>Fast-paced tactical FPS with excellent netcode. <a href=\"/game/critical-ops\">Download Critical Ops APK</a></p>\n<h3>7. Modern Combat 5</h3>\n<p>Gameloft's classic story-driven FPS with great multiplayer. <a href=\"/game/modern-combat-5\">Download Modern Combat 5 APK</a></p>\n<h3>8. Sniper 3D</h3>\n<p>Casual sniper fun with thousands of missions. <a href=\"/game/sniper-3d\">Download Sniper 3D APK</a></p>\n<h3>9. Cover Fire</h3>\n<p>Offline cover shooter with impressive graphics for its size. <a href=\"/game/cover-fire\">Download Cover Fire APK</a></p>\n<h3>10. Dead Trigger 2</h3>\n<p>Zombie FPS with solid graphics and a huge fan base. <a href=\"/game/dead-trigger-2\">Download Dead Trigger 2 APK</a></p>"
-  },
-  {
-    "id": "block-blast-apk-download-hindi-2026",
-    "lang": "hi",
-    "title": "Block Blast! APK Download 2026 — हिंदी में पूरी गाइड",
-    "excerpt": "Block Blast! APK डाउनलोड करने का आसान तरीका हिंदी में। लेटेस्ट वर्जन, साइज़, सिस्टम रिक्वायरमेंट और हाई स्कोर के टिप्स।",
-    "category": "हिंदी",
-    "icon": "🧱",
-    "date": "August 15, 2026",
-    "readTime": "6 मिनट",
-    "content": "<h2>Block Blast! APK Download 2026 — हिंदी गाइड</h2>\n<p>Block Blast! 2026 का सबसे पॉपुलर पज़ल गेम है, जिसे 50 करोड़ से ज़्यादा लोगों ने डाउनलोड किया है। इस गाइड में हम आपको बताएंगे कि Block Blast! APK कैसे डाउनलोड और इंस्टॉल करें।</p>\n<h3>Block Blast! की खासियतें</h3>\n<ul>\n<li>बिल्कुल फ्री — कोई पेमेंट नहीं</li>\n<li>ऑफलाइन खेल सकते हैं — इंटरनेट की ज़रूरत नहीं</li>\n<li>सिर्फ 48 MB — किसी भी फोन पर चलता है</li>\n<li>सिंपल ड्रैग-एंड-ड्रॉप गेमप्ले</li>\n</ul>\n<h3>कैसे डाउनलोड करें?</h3>\n<p><a href=\"/game/block-blast\">Block Blast! APK डाउनलोड पेज</a> पर जाएं और डाउनलोड बटन दबाएं। फ़ाइल डाउनलोड होने के बाद Settings → Security से Unknown Sources ऑन करें और APK इंस्टॉल करें।</p>\n<h3>हाई स्कोर के टिप्स</h3>\n<p>बोर्ड को संतुलित रखें, एक साथ 2-3 लाइन क्लियर करें, और पावर-अप सही समय पर इस्तेमाल करें। इन टिप्स से आप 1 लाख+ स्कोर आसानी से पार कर सकते हैं।</p>\n<p>ऐसे ही मज़ेदार गेम्स: <a href=\"/game/2048\">2048</a>, <a href=\"/game/helix-jump\">Helix Jump</a>, <a href=\"/game/ludo-king\">Ludo King</a></p>"
-  },
-  {
-    "id": "free-fire-max-apk-download-hindi-2026",
-    "lang": "hi",
-    "title": "Free Fire MAX APK Download 2026 — हिंदी गाइड (60 FPS सेटिंग्स के साथ)",
-    "excerpt": "Free Fire MAX APK डाउनलोड करें हिंदी में। लेटेस्ट वर्जन, फ़ाइल साइज़ और लो-एंड फोन पर 60 FPS पाने की पूरी सेटिंग्स।",
-    "category": "हिंदी",
-    "icon": "🔥",
-    "date": "August 14, 2026",
-    "readTime": "8 मिनट",
-    "content": "<h2>Free Fire MAX APK Download 2026 — हिंदी गाइड</h2>\n<p>Free Fire MAX भारत का सबसे पॉपुलर बैटल रॉयल गेम है। HD ग्राफिक्स, 360 डिग्री लॉबी और स्मूद गेमप्ले के लिए Free Fire MAX सबसे अच्छा विकल्प है।</p>\n<h3>Free Fire MAX की खासियतें</h3>\n<ul>\n<li>HD ग्राफिक्स और बेहतर विज़ुअल इफेक्ट्स</li>\n<li>60 FPS सपोर्ट — स्मूद गेमप्ले</li>\n<li>नए मैप्स और कैरेक्टर</li>\n<li>कम स्पेस में पूरा गेम</li>\n</ul>\n<h3>डाउनलोड और इंस्टॉल कैसे करें</h3>\n<p><a href=\"/game/free-fire-max\">Free Fire MAX APK डाउनलोड करें</a> और इंस्टॉल करें। ध्यान रखें — Free Fire MAX में अपने पुराने Free Fire अकाउंट से लॉगिन कर सकते हैं, प्रोग्रेस सेव रहती है।</p>\n<h3>लो-एंड फोन पर 60 FPS कैसे पाएं</h3>\n<p>Settings → Display में जाकर Graphics को Smooth करें, High FPS ऑन करें, Shadows बंद करें। साथ ही बैकग्राउंड के सारे ऐप्स बंद कर दें — इससे FPS ड्रॉप नहीं होगा।</p>\n<p>अन्य बैटल रॉयल गेम्स: <a href=\"/game/pubg-mobile\">PUBG Mobile</a>, <a href=\"/game/garena-free-fire\">Free Fire</a>, <a href=\"/game/delta-force\">Delta Force</a></p>"
-  },
-  {
-    "id": "subway-surfers-apk-download-hindi-2026",
-    "lang": "hi",
-    "title": "Subway Surfers APK Download 2026 — हिंदी में पूरी जानकारी",
-    "excerpt": "Subway Surfers APK का लेटेस्ट वर्जन डाउनलोड करें हिंदी में। नए अपडेट्स, कैरेक्टर और हाई स्कोर टिप्स।",
-    "category": "हिंदी",
-    "icon": "🏃",
-    "date": "August 13, 2026",
-    "readTime": "5 मिनट",
-    "content": "<h2>Subway Surfers APK Download 2026</h2>\n<p>Subway Surfers दुनिया के सबसे ज़्यादा डाउनलोड होने वाले गेम्स में से एक है — 3 अरब+ डाउनलोड। यह रनिंग गेम बच्चों से लेकर बड़ों तक सबका पसंदीदा है।</p>\n<h3>नए अपडेट्स 2026</h3>\n<p>इस साल के अपडेट में नए वर्ल्ड टूर शहर, नए कैरेक्टर और स्पेशल इवेंट्स जोड़े गए हैं। हर हफ्ते नया सिटी थीम आता है।</p>\n<h3>डाउनलोड कैसे करें</h3>\n<p><a href=\"/game/subway-surfers\">Subway Surfers APK डाउनलोड पेज</a> पर जाएं, डाउनलोड बटन दबाएं और फ़ाइल इंस्टॉल करें। गेम सिर्फ 175 MB का है और ऑफलाइन भी चलता है।</p>\n<h3>हाई स्कोर टिप्स</h3>\n<p>स्कोर मल्टीप्लायर को पहले मैक्स करें, हॉवरबोर्ड का सही इस्तेमाल करें और ट्रेनों के ऊपर दौड़ें — इससे आपका स्कोर 10 मिलियन+ तक जा सकता है।</p>\n<p>ऐसे ही रनिंग गेम्स: <a href=\"/game/temple-run-2\">Temple Run 2</a>, <a href=\"/game/crossy-road\">Crossy Road</a></p>"
-  },
-  {
-    "id": "apk-install-kare-hindi-guide-2026",
-    "lang": "hi",
-    "title": "Android में APK File कैसे Install करें — हिंदी गाइड 2026",
-    "excerpt": "Android फोन में APK फाइल इंस्टॉल करने का आसान हिंदी गाइड। Unknown Sources ऑन करने से लेकर इंस्टॉल करने तक — स्टेप बाय स्टेप।",
-    "category": "हिंदी",
-    "icon": "📱",
-    "date": "August 12, 2026",
-    "readTime": "4 मिनट",
-    "content": "<h2>Android में APK File कैसे Install करें?</h2>\n<p>APK फाइल Android ऐप्स की इंस्टॉलेशन फाइल होती है। जब आप Play Store के बाहर से कोई गेम डाउनलोड करते हैं, तो उसे इंस्टॉल करने के लिए यह गाइड फॉलो करें।</p>\n<h3>Step 1: Unknown Sources ऑन करें</h3>\n<p>Settings → Security (या Privacy) में जाकर \"Install Unknown Apps\" या \"Unknown Sources\" ऑप्शन ऑन करें। अगर आप Chrome से डाउनलोड कर रहे हैं तो Chrome के लिए भी यह अलाउ करें।</p>\n<h3>Step 2: APK फाइल डाउनलोड करें</h3>\n<p>भरोसेमंद साइट से ही डाउनलोड करें। <a href=\"/\">GameVault APK</a> से <a href=\"/game/block-blast\">Block Blast!</a>, <a href=\"/game/subway-surfers\">Subway Surfers</a>, <a href=\"/game/free-fire-max\">Free Fire MAX</a> जैसे गेम्स सुरक्षित डाउनलोड करें।</p>\n<h3>Step 3: फाइल को ढूंढें और इंस्टॉल करें</h3>\n<p>File Manager खोलें → Downloads फोल्डर में जाएं → APK फाइल पर टैप करें → Install दबाएं। बस, गेम इंस्टॉल हो गया!</p>\n<h3>सावधानियां</h3>\n<ul>\n<li>किसी भी गेम को SMS या Contact एक्सेस की परमिशन न दें</li>\n<li>हमेशा भरोसेमंद साइट से डाउनलोड करें</li>\n<li>ऑनलाइन गेम्स में MOD APK इस्तेमाल न करें — बैन हो सकता है</li>\n</ul>"
-  },
-  {
-    "id": "gta-san-andreas-apk-download-hindi-2026",
-    "lang": "hi",
-    "title": "GTA San Andreas APK Download 2026 — हिंदी गाइड (Cheats के साथ)",
-    "excerpt": "GTA San Andreas APK डाउनलोड करें हिंदी में। गेम साइज़, सिस्टम रिक्वायरमेंट और सभी चीट कोड्स की पूरी लिस्ट।",
-    "category": "हिंदी",
-    "icon": "🚗",
-    "date": "August 11, 2026",
-    "readTime": "7 मिनट",
-    "content": "<h2>GTA San Andreas APK Download 2026 — हिंदी गाइड</h2>\n<p>GTA San Andreas अब तक का सबसे लोकप्रिय ओपन-वर्ल्ड गेम है। Rockstar Games का यह क्लासिक अब Android पर मोबाइल-ऑप्टिमाइज़्ड कंट्रोल्स के साथ उपलब्ध है।</p>\n<h3>गेम की खासियतें</h3>\n<ul>\n<li>पूरा San Andreas शहर — 3 शहर एक्सप्लोर करें</li>\n<li>100+ मिशन्स और साइड क्वेस्ट्स</li>\n<li>गाड़ियां, मोटरसाइकिल, हेलीकॉप्टर</li>\n<li>ऑफलाइन खेल सकते हैं</li>\n</ul>\n<h3>डाउनलोड कैसे करें</h3>\n<p><a href=\"/game/gta-san-andreas\">GTA San Andreas APK डाउनलोड करें</a>। फ़ाइल साइज़ लगभग 2.5 GB है — WiFi पर डाउनलोड करें। इंस्टॉल करने के लिए Unknown Sources ऑन करना न भूलें।</p>\n<h3>लोकप्रिय चीट कोड्स</h3>\n<ul>\n<li><strong>LXGIWYL</strong> — हथियार सेट 1</li>\n<li><strong>AIWPRTON</strong> — टैंक स्पॉन करें</li>\n<li><strong>HESOYAM</strong> — पूरी हेल्थ + पैसा</li>\n<li><strong>SPEEDFREAK</strong> — सभी गाड़ियों में नाइट्रो</li>\n</ul>\n<p>ऐसे ही ओपन-वर्ल्ड गेम्स: <a href=\"/game/gta-vice-city\">GTA Vice City</a>, <a href=\"/game/gangstar-vegas\">Gangstar Vegas</a>, <a href=\"/game/gta-3\">GTA 3</a></p>"
-  },
+  }
 ];
 
 export function getBlogById(id: string): BlogPost | undefined {

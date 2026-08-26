@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { BLOG_POSTS } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Android Gaming Blog, News, Tips & Guides (English + हिंदी)",
-  description: "Read the latest Android gaming guides, top 10 game lists, FPS boost tutorials, APK download guides in English and Hindi on GameVault APK.",
+  title: "Android Gaming Blog, News, Tips & Guides — GameVault APK",
+  description: "Read the latest Android gaming guides, top 10 game lists, FPS boost tutorials, and APK download guides on GameVault APK.",
   alternates: { canonical: "https://gamevaultinfo.com/blog" },
 };
 
@@ -17,10 +17,10 @@ export default function BlogListPage() {
         <span style={{ color: "var(--text-primary)" }}>Blog</span>
       </nav>
 
-      <div style={{ margin: "2rem 0 3rem" }}>
+<div style={{ margin: "2rem 0 3rem" }}>
         <h1>📝 Android Gaming Blog & Guides</h1>
-        <p>Tips, tricks, top 10 lists, and APK download guides — English and Hindi.</p>
-      </div>
+        <p>Tips, tricks, top 10 lists, and APK download guides.</p>
+</div>
 
       <div className="games-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}>
         {BLOG_POSTS.map((blog) => (
