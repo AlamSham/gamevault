@@ -2573,7 +2573,7 @@ export const GAMES: Game[] = [
     "name": "Jetpack Joyride",
     "developer": "Halfbrick Studios",
     "category": "arcade",
-    "version": "1.78.0",
+    "version": "1.104.1",
     "size": "38 MB",
     "androidReq": "5.0+",
     "rating": 4.3,
