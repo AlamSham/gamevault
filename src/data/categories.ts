@@ -70,6 +70,13 @@ export const CATEGORIES: Category[] = [
     "icon": "🗺️",
     "description": "Explore vast worlds in adventure games",
     "count": 9
+  },
+  {
+    "id": "apps",
+    "name": "Apps & Tools",
+    "icon": "📱",
+    "description": "Top banned, utility, video editing & photo apps for Android",
+    "count": 20
   }
 ];
 
