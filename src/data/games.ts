@@ -11058,7 +11058,7 @@ export const GAMES: Game[] = [
       "🪂💥",
       "⭐🔥"
     ],
-    "playStoreUrl": "https://www.fortnite.com/mobile/android"
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.epicgames.fortnite"
   },
   {
     "id": "apex-legends-mobile",
