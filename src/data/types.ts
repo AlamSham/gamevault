@@ -18,6 +18,11 @@ export interface FAQ {
 export interface Game {
   id: string;
   name: string;
+  nativeName?: string;
+  nativeLanguage?: string;
+  nativeKeywords?: string[];
+  nativeTitleTag?: string;
+  nativeDescription?: string;
   developer: string;
   category: string;
   version: string;

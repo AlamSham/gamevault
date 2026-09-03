@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     };
   }
 
-  const title = `${game.name} APK Download v${game.version} (Latest 2026) for Android`;
-  const description = `Download ${game.name} APK v${game.version} for Android (${game.size}). 100% verified original & safe direct download, latest features, system requirements & older versions archive.`;
+  const title = game.nativeTitleTag || `${game.name} APK Download v${game.version} (Latest 2026) for Android`;
+  const description = game.nativeDescription || `Download ${game.name} APK v${game.version} for Android (${game.size}). 100% verified original & safe direct download, latest features, system requirements & older versions archive.`;
   const url = `https://gamevaultinfo.com/game/${game.id}`;
-  const keywords = [
+  const defaultKeywords = [
     game.name,
     `${game.name} APK`,
     `${game.name} APK download`,
@@ -41,12 +41,15 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     game.category,
   ];
 
+  const keywords = game.nativeKeywords ? [...game.nativeKeywords, ...defaultKeywords] : defaultKeywords;
+
   return {
     title,
     description,
     keywords,
     alternates: {
       canonical: url,
+      languages: game.nativeLanguage ? { [game.nativeLanguage]: url } : undefined,
     },
     openGraph: {
       type: "website",

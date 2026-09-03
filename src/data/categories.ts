@@ -77,6 +77,13 @@ export const CATEGORIES: Category[] = [
     "icon": "📱",
     "description": "Top banned, utility, video editing & photo apps for Android",
     "count": 20
+  },
+  {
+    "id": "japan-kr",
+    "name": "Japan & Korea Exclusives (日本・韓国)",
+    "icon": "🌸",
+    "description": "Top region-locked Japanese & Korean anime, gacha, and RPG games in native Japanese (日本語) and Korean (한국어)",
+    "count": 10
   }
 ];
 
