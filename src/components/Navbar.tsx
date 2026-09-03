@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import { Search, Menu, X, Gamepad2 } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -23,7 +24,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container">
         <Link href="/" className="nav-logo" onClick={() => setMobileOpen(false)}>
-          <img src="/images/logo.png" alt="GameVault Logo" className="site-logo-img" />
+          <Image src="/images/logo.png" alt="GameVault APK — Safe Android Game Downloads" width={36} height={36} className="site-logo-img" priority />
           <span>GameVault</span>
         </Link>
 

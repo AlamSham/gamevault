@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/images/logo.png" alt="GameVault Logo" className="site-logo-img" style={{ height: 32 }} />
+              <Image src="/images/logo.png" alt="GameVault APK Logo" width={32} height={32} className="site-logo-img" />
               <span>GameVault APK</span>
             </div>
             <p>Your trusted source for 100% safe, verified Android game APK downloads.</p>
@@ -36,7 +37,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-column">
-            <h4>Legal & Information</h4>
+            <h4>Legal &amp; Information</h4>
             <ul>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/contact">Contact</Link></li>
@@ -49,7 +50,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} GameVault APK. All rights reserved.</span>
-          <span>Made with ❤️ for Android Gamers — 100% SEO Optimized</span>
+          <span>Made with ❤️ for Android Gamers</span>
         </div>
       </div>
     </footer>

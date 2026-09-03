@@ -24,11 +24,35 @@ export async function generateMetadata({ params, searchParams }: DownloadPagePro
   const description = `Get ${game.name} APK v${activeVersion} for Android. 100% verified safe and malware free download on GameVault.`;
   const url = `https://gamevaultinfo.com/download/${game.id}${version ? `?version=${version}` : ""}`;
 
+  const canonicalUrl = `https://gamevaultinfo.com/game/${game.id}`;
+
   return {
     title,
     description,
-    alternates: { canonical: url },
-    openGraph: { title, description, url },
+    robots: {
+      index: false,
+      follow: true,
+    },
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      title,
+      description,
+      url,
+      images: [
+        {
+          url: "https://gamevaultinfo.com/images/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: `Download ${game.name} APK`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["https://gamevaultinfo.com/images/og-image.jpg"],
+    },
   };
 }
 

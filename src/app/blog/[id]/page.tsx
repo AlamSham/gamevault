@@ -41,6 +41,12 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
     headline: blog.title,
     description: blog.excerpt,
     datePublished: blog.date,
+    dateModified: blog.date,
+    image: "https://gamevaultinfo.com/images/og-image.jpg",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://gamevaultinfo.com/blog/${blog.id}`,
+    },
     author: {
       "@type": "Organization",
       name: "GameVault Team",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import GameCard from "@/components/GameCard";
+import JsonLd from "@/components/JsonLd";
 import { getTrendingGames, getFeaturedGames, GAMES } from "@/data/games";
 import { CATEGORIES } from "@/data/categories";
 import { BLOG_POSTS } from "@/data/blogs";
@@ -10,8 +11,23 @@ export default function HomePage() {
   const featuredGames = getFeaturedGames(12);
   const recentBlogs = BLOG_POSTS.slice(0, 3);
 
+  // ItemList schema for Google carousel rich snippet
+  const trendingListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Trending Android Games 2026",
+    numberOfItems: trendingGames.length,
+    itemListElement: trendingGames.map((game, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: game.name,
+      url: `https://gamevaultinfo.com/game/${game.id}`,
+    })),
+  };
+
   return (
     <div>
+      <JsonLd data={trendingListSchema} />
       {/* HERO SECTION */}
       <section className="hero">
         <div className="container hero-content">

@@ -5,7 +5,14 @@ import { BLOG_POSTS } from "@/data/blogs";
 export const metadata: Metadata = {
   title: "Android Gaming Blog, News, Tips & Guides — GameVault APK",
   description: "Read the latest Android gaming guides, top 10 game lists, FPS boost tutorials, and APK download guides on GameVault APK.",
+  keywords: ["Android gaming blog", "APK download guide", "top 10 Android games", "mobile gaming tips", "best Android games 2026"],
   alternates: { canonical: "https://gamevaultinfo.com/blog" },
+  openGraph: {
+    title: "Android Gaming Blog, News, Tips & Guides — GameVault APK",
+    description: "Read the latest Android gaming guides, top 10 game lists, and APK download tutorials.",
+    url: "https://gamevaultinfo.com/blog",
+    type: "website",
+  },
 };
 
 export default function BlogListPage() {

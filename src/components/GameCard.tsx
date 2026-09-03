@@ -8,7 +8,7 @@ interface GameCardProps {
 
 export default function GameCard({ game }: GameCardProps) {
   return (
-    <div className="game-card">
+    <div className="game-card" role="article" aria-label={`${game.name} — ${game.category} game, rated ${game.rating}/5, size ${game.size}`}>
       <div className="game-card-image">
         <div
           className="game-icon-placeholder"

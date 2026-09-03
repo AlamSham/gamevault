@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gamevaultinfo.com"),
@@ -68,10 +81,24 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <head>
+        {/* Google Search Console Verification — Replace with your actual verification code */}
+        <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
         <JsonLd data={websiteSchema} />
         <JsonLd data={organizationSchema} />
+        {/* Google Analytics (GA4) — Replace GA_MEASUREMENT_ID with your actual ID */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GA_MEASUREMENT_ID');
+            `,
+          }}
+        />
       </head>
       <body>
         <Navbar />

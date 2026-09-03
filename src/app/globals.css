@@ -3,8 +3,7 @@
    Premium Dark Gaming Aesthetic
    ============================================ */
 
-/* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+/* ---------- Fonts via next/font CSS Variables ---------- */
 
 /* ---------- CSS Variables ---------- */
 :root {
@@ -98,7 +97,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
@@ -141,7 +140,7 @@ body::before {
 
 /* ---------- Typography ---------- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: var(--text-primary);
@@ -199,7 +198,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 800;
   font-size: 1.35rem;
   color: var(--text-primary);
@@ -235,7 +234,7 @@ a:hover {
   padding: 0 var(--spacing-lg) 0 42px;
   color: var(--text-primary);
   font-size: 0.875rem;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), sans-serif;
   transition: var(--transition-base);
   outline: none;
 }
@@ -397,7 +396,7 @@ a:hover {
   padding: 0 130px 0 52px;
   color: var(--text-primary);
   font-size: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), sans-serif;
   outline: none;
   transition: var(--transition-base);
 }
@@ -429,7 +428,7 @@ a:hover {
   color: #000;
   font-weight: 700;
   font-size: 0.9rem;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), sans-serif;
   cursor: pointer;
   transition: var(--transition-base);
 }
@@ -443,7 +442,7 @@ a:hover {
 
 .hero-stat { text-align: center; }
 .hero-stat .stat-number {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-size: 1.75rem;
   font-weight: 800;
   background: var(--gradient-primary);
@@ -627,7 +626,7 @@ a:hover {
   background: var(--accent-green-dim);
 }
 .category-card .cat-name {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   color: var(--text-primary);
@@ -653,7 +652,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
   margin-bottom: var(--spacing-md);
@@ -790,3 +789,23 @@ a:hover {
 }
 .breadcrumb a { color: var(--text-secondary); }
 .breadcrumb a:hover { color: var(--accent-green); }
+
+/* Mobile table scroll */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .table-specs {
+    min-width: 500px;
+  }
+  .hero-search input {
+    padding-right: 120px;
+  }
+  .hero-search button {
+    padding: 0 16px;
+    font-size: 0.8rem;
+  }
+}

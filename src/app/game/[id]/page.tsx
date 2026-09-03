@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     };
   }
 
-  const title = `${game.name} APK Download v${game.version} (100% Safe & Direct)`;
-  const description = `Download ${game.name} APK v${game.version} for Android (${game.size}). Verified virus-free direct link, system requirements, older version archive & features.`;
+  const title = `${game.name} APK Download v${game.version} (Latest 2026) for Android`;
+  const description = `Download ${game.name} APK v${game.version} for Android (${game.size}). 100% verified original & safe direct download, latest features, system requirements & older versions archive.`;
   const url = `https://gamevaultinfo.com/game/${game.id}`;
   const keywords = [
     game.name,
@@ -32,10 +32,12 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     `${game.name} APK download`,
     `${game.name} v${game.version}`,
     `${game.name} latest version 2026`,
+    `${game.name} android download`,
     `${game.name} old version download`,
-    `${game.name} size MB`,
+    `${game.name} size ${game.size}`,
     `${game.name} safe download`,
     `download ${game.name} free android`,
+    `${game.name} original apk`,
     game.category,
   ];
 
@@ -96,6 +98,17 @@ export default async function GameDetailPage({ params }: GamePageProps) {
       price: "0",
       priceCurrency: "USD",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: game.rating.toString(),
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: game.downloads.replace(/[^0-9]/g, "") || "10000",
+    },
+    downloadUrl: `https://gamevaultinfo.com/download/${game.id}`,
+    ...(game.screenshots && game.screenshots.length > 0 && {
+      screenshot: game.screenshots.map((s) => ({ "@type": "ImageObject", url: s })),
+    }),
   };
 
   // 2. BreadcrumbList Schema
@@ -237,6 +250,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
       <h2 style={{ marginBottom: "1rem", fontSize: "1.3rem", display: "flex", alignItems: "center", gap: 8 }}>
         <FileCheck size={20} color="var(--accent-blue)" /> Technical Specifications & File Details
       </h2>
+      <div className="table-responsive">
       <table className="table-specs">
         <tbody>
           <tr>
@@ -273,6 +287,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
           </tr>
         </tbody>
       </table>
+      </div>
 
       {/* ABOUT & FEATURES */}
       <section style={{ margin: "2.5rem 0" }}>
@@ -345,6 +360,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
           <p style={{ color: "var(--text-tertiary)", fontSize: "0.9rem", marginBottom: "1rem" }}>
             Looking for previous release builds? Access verified historical APK mirrors below:
           </p>
+          <div className="table-responsive">
           <table className="table-specs">
             <thead>
               <tr>
@@ -372,6 +388,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
               ))}
             </tbody>
           </table>
+          </div>
         </section>
       )}
 
