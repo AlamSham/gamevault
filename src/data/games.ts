@@ -2574,7 +2574,7 @@ export const GAMES: Game[] = [
     "developer": "Halfbrick Studios",
     "category": "arcade",
     "version": "1.78.0",
-    "size": "110 MB",
+    "size": "38 MB",
     "androidReq": "5.0+",
     "rating": 4.3,
     "downloads": "500M+",
@@ -21203,9 +21203,12 @@ export function getGamePackage(game: Game): string | null {
   return null;
 }
 
-export function getApkMirrorUrl(game: Game, version?: string): string {
-  const query = version ? `${game.name} ${version}` : game.name;
-  return `https://www.apkmirror.com/?s=${encodeURIComponent(query)}`;
+export function getApkMirrorUrl(game: Game): string {
+  const pkg = getGamePackage(game);
+  if (pkg) {
+    return `https://www.apkmirror.com/uploads/?q=${encodeURIComponent(pkg)}`;
+  }
+  return `https://www.apkmirror.com/?s=${encodeURIComponent(game.name)}`;
 }
 
 export function getApkPureUrl(game: Game, version?: string): string {

@@ -74,7 +74,7 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
   // 1. Custom downloadUrl if specified (owned/hosted file)
   // 2. Direct internal API route (/api/download) delivering verified APK stream
   // 3. APKMirror & Play Store as reliable non-blocked backups
-  const apkMirrorUrl = getApkMirrorUrl(game, activeVersion);
+  const apkMirrorUrl = getApkMirrorUrl(game);
   const directApiUrl = `/api/download?id=${game.id}${version ? `&version=${encodeURIComponent(version)}` : ""}`;
   const customOrDriveUrl = olderVersionObj?.downloadUrl || game.downloadUrl || directApiUrl;
 
