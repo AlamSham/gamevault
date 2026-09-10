@@ -119,19 +119,20 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           {blog.excerpt}
         </p>
 
-        {/* E-E-A-T Author & Verification Card (AdSense Compliance) */}
+        {/* Verified Author Card with E-E-A-T Signal */}
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "space-between",
+            flexWrap: "wrap",
             gap: "1rem",
-            padding: "1rem 1.25rem",
+            padding: "1.25rem 1.5rem",
             background: "var(--bg-card)",
             border: "1px solid var(--border-color)",
             borderRadius: "var(--radius-lg)",
             fontSize: "0.88rem",
+            boxShadow: "var(--shadow-sm)",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
@@ -141,7 +142,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                 height: 44,
                 borderRadius: "50%",
                 background: "var(--gradient-primary)",
-                color: "#000",
+                color: "#ffffff",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -180,8 +181,8 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         className="adsense-slot adsense-header"
         style={{
           margin: "1.5rem 0 2rem",
-          padding: "12px",
-          background: "rgba(255, 255, 255, 0.02)",
+          padding: "14px",
+          background: "var(--bg-tertiary)",
           border: "1px dashed var(--border-color)",
           borderRadius: "8px",
           textAlign: "center",
@@ -215,7 +216,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         style={{
           margin: "2.5rem 0",
           padding: "14px",
-          background: "rgba(255, 255, 255, 0.02)",
+          background: "var(--bg-tertiary)",
           border: "1px dashed var(--border-color)",
           borderRadius: "8px",
           textAlign: "center",
@@ -233,12 +234,13 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         style={{
           marginTop: "2.5rem",
           padding: "1.75rem",
-          background: "var(--bg-tertiary)",
+          background: "var(--bg-card)",
           border: "1px solid var(--border-color)",
           borderRadius: "var(--radius-xl)",
           display: "flex",
           gap: "1.25rem",
           alignItems: "flex-start",
+          boxShadow: "var(--shadow-sm)",
         }}
       >
         <div
@@ -247,7 +249,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
             height: 64,
             borderRadius: "50%",
             background: "var(--gradient-primary)",
-            color: "#000",
+            color: "#ffffff",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
