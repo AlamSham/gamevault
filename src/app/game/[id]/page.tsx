@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { getGameById, getAllGameIds, getRelatedGames } from "@/data/games";
 import GameCard from "@/components/GameCard";
@@ -174,8 +175,15 @@ export default async function GameDetailPage({ params }: GamePageProps) {
 
       {/* HEADER CARD */}
       <div className="game-header-card">
-        <div className="game-header-icon" style={{ backgroundColor: game.iconColor || "var(--bg-tertiary)" }}>
-          {game.icon || "🎮"}
+        <div className="game-header-icon">
+          <Image
+            src={`/images/games/${game.id}.webp`}
+            alt={`${game.name} official icon`}
+            width={140}
+            height={140}
+            priority
+            className="game-header-icon-img"
+          />
         </div>
 
         <div className="game-header-info">

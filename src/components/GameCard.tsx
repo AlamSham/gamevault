@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Game } from "@/data/types";
 import { Star, Download } from "lucide-react";
 
@@ -10,11 +11,15 @@ export default function GameCard({ game }: GameCardProps) {
   return (
     <div className="game-card" role="article" aria-label={`${game.name} — ${game.category} game, rated ${game.rating}/5, size ${game.size}`}>
       <div className="game-card-image">
-        <div
-          className="game-icon-placeholder"
-          style={{ backgroundColor: game.iconColor || "var(--bg-tertiary)" }}
-        >
-          {game.icon || "🎮"}
+        <div className="game-icon-wrapper">
+          <Image
+            src={`/images/games/${game.id}.webp`}
+            alt={`${game.name} official icon`}
+            width={96}
+            height={96}
+            className="game-icon-img"
+            loading="lazy"
+          />
         </div>
         <span className="game-card-category">{game.category}</span>
       </div>
@@ -24,7 +29,7 @@ export default function GameCard({ game }: GameCardProps) {
 
         <div className="game-card-meta">
           <div className="game-card-rating">
-            <Star size={14} fill="#ffd700" color="#ffd700" />
+            <Star size={14} fill="#f59e0b" color="#f59e0b" />
             <span>{game.rating}</span>
           </div>
           <span className="game-card-size">{game.size}</span>
@@ -37,3 +42,4 @@ export default function GameCard({ game }: GameCardProps) {
     </div>
   );
 }
+

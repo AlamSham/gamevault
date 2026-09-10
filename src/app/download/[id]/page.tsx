@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { getGameById, getApkMirrorUrl } from "@/data/games";
 import DownloadTimer from "@/components/DownloadTimer";
@@ -85,7 +86,16 @@ export default async function DownloadPage({ params, searchParams }: DownloadPag
       </Link>
 
       <div style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)", borderRadius: "var(--radius-xl)", padding: "2.5rem", textAlign: "center" }}>
-        <div style={{ fontSize: "4rem", marginBottom: "1rem" }}>{game.icon || "🎮"}</div>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.25rem" }}>
+          <Image
+            src={`/images/games/${game.id}.webp`}
+            alt={`${game.name} official icon`}
+            width={100}
+            height={100}
+            priority
+            style={{ borderRadius: "var(--radius-xl)", boxShadow: "var(--shadow-md)" }}
+          />
+        </div>
 
         <h1 style={{ fontSize: "1.8rem", marginBottom: "0.5rem" }}>
           Downloading {game.name} APK v{activeVersion}

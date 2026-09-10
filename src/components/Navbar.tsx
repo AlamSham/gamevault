@@ -43,22 +43,22 @@ export default function Navbar() {
           <ul className={`nav-links ${mobileOpen ? "active" : ""}`}>
             <li>
               <Link href="/" className={pathname === "/" ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                🏠 Home
+                Home
               </Link>
             </li>
             <li>
               <Link href="/category/action" className={pathname.startsWith("/category") ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                🎮 Games
+                Games Catalog
               </Link>
             </li>
             <li>
               <Link href="/blog" className={pathname.startsWith("/blog") ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                📝 Blog
+                Technical Guides
               </Link>
             </li>
             <li>
               <Link href="/about" className={pathname === "/about" ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                ℹ️ About
+                Testing Lab
               </Link>
             </li>
           </ul>
