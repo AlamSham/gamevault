@@ -80,6 +80,8 @@ async function submitUrls() {
         console.error(`[FAIL] ${targetUrl} -> ${err.message}`);
         failCount++;
       }
+      // Wait 1 second to avoid rate-limit throttling
+      await new Promise(r => setTimeout(r, 1000));
     }
 
     console.log("\n====================================================");
