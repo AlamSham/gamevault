@@ -31,8 +31,9 @@ export default function Footer() {
               <li><Link href="/game/subway-surfers">Subway Surfers</Link></li>
               <li><Link href="/game/free-fire-max">Free Fire MAX</Link></li>
               <li><Link href="/game/minecraft">Minecraft</Link></li>
-              <li><Link href="/game/pubg-mobile">PUBG Mobile</Link></li>
-              <li><Link href="/game/clash-of-clans">Clash of Clans</Link></li>
+              <li><Link href="/game/capcut">CapCut Video Editor</Link></li>
+              <li><Link href="/game/block-blast">Block Blast!</Link></li>
+              <li><Link href="/all-games" style={{ color: "var(--accent-green)", fontWeight: 700 }}>Browse All 239+ Games →</Link></li>
             </ul>
           </div>
 

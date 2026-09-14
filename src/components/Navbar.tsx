@@ -47,18 +47,23 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+              <Link href="/all-games" className={pathname === "/all-games" ? "active" : ""} onClick={() => setMobileOpen(false)}>
+                All Games A-Z
+              </Link>
+            </li>
+            <li>
               <Link href="/category/action" className={pathname.startsWith("/category") ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                Games Catalog
+                Categories
               </Link>
             </li>
             <li>
               <Link href="/blog" className={pathname.startsWith("/blog") ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                Technical Guides
+                Guides &amp; News
               </Link>
             </li>
             <li>
               <Link href="/about" className={pathname === "/about" ? "active" : ""} onClick={() => setMobileOpen(false)}>
-                Testing Lab
+                About &amp; Trust
               </Link>
             </li>
           </ul>
