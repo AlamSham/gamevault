@@ -29,6 +29,18 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
+  async redirects() {
+    return [
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/blog.html", destination: "/blog", permanent: true },
+      { source: "/about.html", destination: "/about", permanent: true },
+      { source: "/contact.html", destination: "/contact", permanent: true },
+      { source: "/dmca.html", destination: "/dmca", permanent: true },
+      { source: "/privacy.html", destination: "/privacy", permanent: true },
+      { source: "/terms.html", destination: "/terms", permanent: true },
+      { source: "/search.html", destination: "/search", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
