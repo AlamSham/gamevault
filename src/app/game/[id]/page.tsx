@@ -102,17 +102,24 @@ export default async function GameDetailPage({ params }: GamePageProps) {
       price: "0",
       priceCurrency: "USD",
     },
+    image: `https://gamevaultinfo.com/images/games/${game.id}.webp`,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: game.rating.toString(),
       bestRating: "5",
       worstRating: "1",
-      ratingCount: game.downloads.replace(/[^0-9]/g, "") || "10000",
+      ratingCount: (
+        (parseInt(game.downloads.replace(/[^0-9]/g, "") || "10", 10) || 10) *
+        (game.downloads.includes("B") ? 50000 : game.downloads.includes("M") ? 5000 : 500)
+      ).toString(),
     },
     downloadUrl: `https://gamevaultinfo.com/download/${game.id}`,
-    ...(game.screenshots && game.screenshots.length > 0 && {
-      screenshot: game.screenshots.map((s) => ({ "@type": "ImageObject", url: s })),
-    }),
+    ...(game.screenshots &&
+      game.screenshots.some((s) => s.startsWith("http") || s.startsWith("/")) && {
+        screenshot: game.screenshots
+          .filter((s) => s.startsWith("http") || s.startsWith("/"))
+          .map((s) => ({ "@type": "ImageObject", url: s })),
+      }),
   };
 
   // 2. BreadcrumbList Schema
