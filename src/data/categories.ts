@@ -6,7 +6,7 @@ export const CATEGORIES: Category[] = [
     "name": "Action",
     "icon": "⚔️",
     "description": "High-octane action games with intense gameplay and combat",
-    "count": 65
+    "count": 68
   },
   {
     "id": "racing",
@@ -27,7 +27,7 @@ export const CATEGORIES: Category[] = [
     "name": "Strategy",
     "icon": "🏰",
     "description": "Build, plan, and conquer with strategy games",
-    "count": 12
+    "count": 13
   },
   {
     "id": "sports",
@@ -76,7 +76,7 @@ export const CATEGORIES: Category[] = [
     "name": "Apps & Tools",
     "icon": "📱",
     "description": "Top banned, utility, video editing & photo apps for Android",
-    "count": 20
+    "count": 14
   },
   {
     "id": "japan-kr",

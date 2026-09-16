@@ -4,7 +4,7 @@ import { Home, Search, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "404 — Page Not Found | GameVault APK",
-  description: "The page you are looking for does not exist. Browse 200+ safe, verified Android game APK downloads on GameVault.",
+  description: "The page you are looking for does not exist. Browse safe, verified Android game APK downloads on GameVault.",
 };
 
 export default function NotFound() {

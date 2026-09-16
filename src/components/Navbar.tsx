@@ -33,7 +33,7 @@ export default function Navbar() {
           <input
             type="text"
             name="q"
-            placeholder="Search 200+ Android games..."
+            placeholder="Search games..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getGameById, getAllGameIds, getRelatedGames } from "@/data/games";
+import { getGameById, getAllGameIds, getRelatedGames, GAMES } from "@/data/games";
 import GameCard from "@/components/GameCard";
 import JsonLd from "@/components/JsonLd";
 import { ShieldCheck, Download, Star, CheckCircle2, AlertTriangle, HelpCircle, FileCheck, HardDrive, Smartphone, Cpu, Wrench } from "lucide-react";
@@ -108,10 +108,6 @@ export default async function GameDetailPage({ params }: GamePageProps) {
       ratingValue: game.rating.toString(),
       bestRating: "5",
       worstRating: "1",
-      ratingCount: (
-        (parseInt(game.downloads.replace(/[^0-9]/g, "") || "10", 10) || 10) *
-        (game.downloads.includes("B") ? 50000 : game.downloads.includes("M") ? 5000 : 500)
-      ).toString(),
     },
     downloadUrl: `https://gamevaultinfo.com/download/${game.id}`,
     ...(game.screenshots &&
@@ -520,7 +516,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem", flexWrap: "wrap", gap: 10 }}>
             <h2 style={{ margin: 0 }}>🎯 Related &amp; Similar Games</h2>
             <Link href="/all-games" style={{ color: "var(--accent-green)", fontWeight: 600, fontSize: "0.95rem" }}>
-              Browse Complete Catalog (230+ Games) →
+              Browse Complete Catalog ({GAMES.length}+ Games) →
             </Link>
           </div>
           <div className="games-grid">
@@ -547,7 +543,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
                 boxShadow: "var(--shadow-sm)",
               }}
             >
-              Explore Complete A-Z Directory (230+ Games) →
+              Explore Complete A-Z Directory ({GAMES.length}+ Games) →
             </Link>
           </div>
         </section>

@@ -9,14 +9,14 @@ import { ShieldCheck, Library } from "lucide-react";
 export const metadata: Metadata = {
   title: "All Android Games & Apps A-Z Directory (2026) | GameVault APK",
   description:
-    "Explore the complete A-Z catalog of 230+ verified safe Android APK downloads. Fast direct download links, malware-free guarantee, historical versions & system requirements.",
+    `Explore the complete A-Z catalog of ${GAMES.length}+ verified safe Android APK downloads. Fast direct download links, malware-free guarantee, historical versions & system requirements.`,
   alternates: {
     canonical: "https://gamevaultinfo.com/all-games",
   },
   openGraph: {
     title: "All Android Games & Apps A-Z Directory (2026) | GameVault APK",
     description:
-      "Explore the complete A-Z catalog of 230+ verified safe Android APK downloads. Free high-speed direct downloads, malware-free guarantee.",
+      `Explore the complete A-Z catalog of ${GAMES.length}+ verified safe Android APK downloads. Free high-speed direct downloads, malware-free guarantee.`,
     url: "https://gamevaultinfo.com/all-games",
     siteName: "GameVault APK",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "All Android Games & Apps A-Z Directory (2026)",
-    description: "Browse 230+ verified safe Android game APKs with direct downloads.",
+    description: `Browse ${GAMES.length}+ verified safe Android game APKs with direct downloads.`,
     images: ["https://gamevaultinfo.com/images/og-image.jpg"],
   },
 };

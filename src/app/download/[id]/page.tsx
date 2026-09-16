@@ -2,9 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getGameById, getApkMirrorUrl } from "@/data/games";
+import { getGameById, getApkMirrorUrl, getAllGameIds } from "@/data/games";
 import DownloadTimer from "@/components/DownloadTimer";
 import { ShieldCheck, ArrowLeft, Server } from "lucide-react";
+
+export async function generateStaticParams() {
+  return getAllGameIds();
+}
 
 interface DownloadPageProps {
   params: Promise<{ id: string }>;

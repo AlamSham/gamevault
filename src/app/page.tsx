@@ -40,7 +40,7 @@ export default function HomePage() {
           </h1>
 
           <p>
-            Explore 200+ top rated Android games. Safe, virus-free APK files with direct high-speed download links.
+            Explore {GAMES.length}+ top rated Android games. Safe, virus-free APK files with direct high-speed download links.
           </p>
 
           <form action="/search" method="GET" className="hero-search">

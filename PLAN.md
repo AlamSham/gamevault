@@ -1,9 +1,9 @@
 # GameVault APK — Long-Term Growth Plan (Aug 2026)
 
 ## Current Status (Post-Fix Audit)
-- **211 games** (was 210; 4 fake/duplicate entries removed, 5 high-traffic games added)
+- **239 games** (was 210; 4 fake/duplicate entries removed, 5 high-traffic games added, 28 more games added since)
 - **Live domain:** gamevaultinfo.com (Vercel, HTTP 200)
-- **Build:** clean, 211 game pages SSG, lint 0 errors
+- **Build:** clean, 239 game pages SSG, lint 0 errors
 - **Links:** 5 broken packages fixed, all 211 Play Store links verified, zero duplicate packages
 
 ---

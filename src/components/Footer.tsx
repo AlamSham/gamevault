@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { GAMES } from "@/data/games";
 
 export default function Footer() {
   return (
@@ -33,7 +34,7 @@ export default function Footer() {
               <li><Link href="/game/minecraft">Minecraft</Link></li>
               <li><Link href="/game/capcut">CapCut Video Editor</Link></li>
               <li><Link href="/game/block-blast">Block Blast!</Link></li>
-              <li><Link href="/all-games" style={{ color: "var(--accent-green)", fontWeight: 700 }}>Browse All 239+ Games →</Link></li>
+              <li><Link href="/all-games" style={{ color: "var(--accent-green)", fontWeight: 700 }}>Browse All {GAMES.length}+ Games →</Link></li>
             </ul>
           </div>
 
