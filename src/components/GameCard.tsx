@@ -19,6 +19,7 @@ export default function GameCard({ game }: GameCardProps) {
             height={96}
             className="game-icon-img"
             loading="lazy"
+            unoptimized
           />
         </div>
         <span className="game-card-category">{game.category}</span>
@@ -35,7 +36,7 @@ export default function GameCard({ game }: GameCardProps) {
           <span className="game-card-size">{game.size}</span>
         </div>
 
-        <Link href={`/game/${game.id}`} className="game-card-download">
+        <Link href={`/game/${game.id}`} prefetch={false} className="game-card-download">
           <Download size={14} /> Download APK
         </Link>
       </div>
