@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container">
-        <Link href="/" className="nav-logo" onClick={() => setMobileOpen(false)}>
+        <Link prefetch={false} href="/" className="nav-logo" onClick={() => setMobileOpen(false)}>
           <Image src="/images/logo.png" alt="GameVault APK — Safe Android Game Downloads" width={36} height={36} className="site-logo-img" priority />
           <span>GameVault</span>
         </Link>
@@ -42,27 +42,27 @@ export default function Navbar() {
         <nav>
           <ul className={`nav-links ${mobileOpen ? "active" : ""}`}>
             <li>
-              <Link href="/" className={pathname === "/" ? "active" : ""} onClick={() => setMobileOpen(false)}>
+              <Link prefetch={false} href="/" className={pathname === "/" ? "active" : ""} onClick={() => setMobileOpen(false)}>
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/all-games" className={pathname === "/all-games" ? "active" : ""} onClick={() => setMobileOpen(false)}>
+              <Link prefetch={false} href="/all-games" className={pathname === "/all-games" ? "active" : ""} onClick={() => setMobileOpen(false)}>
                 All Games A-Z
               </Link>
             </li>
             <li>
-              <Link href="/category/action" className={pathname.startsWith("/category") ? "active" : ""} onClick={() => setMobileOpen(false)}>
+              <Link prefetch={false} href="/category/action" className={pathname.startsWith("/category") ? "active" : ""} onClick={() => setMobileOpen(false)}>
                 Categories
               </Link>
             </li>
             <li>
-              <Link href="/blog" className={pathname.startsWith("/blog") ? "active" : ""} onClick={() => setMobileOpen(false)}>
+              <Link prefetch={false} href="/blog" className={pathname.startsWith("/blog") ? "active" : ""} onClick={() => setMobileOpen(false)}>
                 Guides &amp; News
               </Link>
             </li>
             <li>
-              <Link href="/about" className={pathname === "/about" ? "active" : ""} onClick={() => setMobileOpen(false)}>
+              <Link prefetch={false} href="/about" className={pathname === "/about" ? "active" : ""} onClick={() => setMobileOpen(false)}>
                 About &amp; Trust
               </Link>
             </li>

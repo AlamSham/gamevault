@@ -18,34 +18,34 @@ export default function Footer() {
           <div className="footer-column">
             <h4>Categories</h4>
             <ul>
-              <li><Link href="/category/action">Action Games</Link></li>
-              <li><Link href="/category/racing">Racing Games</Link></li>
-              <li><Link href="/category/puzzle">Puzzle Games</Link></li>
-              <li><Link href="/category/strategy">Strategy Games</Link></li>
-              <li><Link href="/category/sports">Sports Games</Link></li>
+              <li><Link prefetch={false} href="/category/action">Action Games</Link></li>
+              <li><Link prefetch={false} href="/category/racing">Racing Games</Link></li>
+              <li><Link prefetch={false} href="/category/puzzle">Puzzle Games</Link></li>
+              <li><Link prefetch={false} href="/category/strategy">Strategy Games</Link></li>
+              <li><Link prefetch={false} href="/category/sports">Sports Games</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Popular Games</h4>
             <ul>
-              <li><Link href="/game/subway-surfers">Subway Surfers</Link></li>
-              <li><Link href="/game/free-fire-max">Free Fire MAX</Link></li>
-              <li><Link href="/game/minecraft">Minecraft</Link></li>
-              <li><Link href="/game/capcut">CapCut Video Editor</Link></li>
-              <li><Link href="/game/block-blast">Block Blast!</Link></li>
-              <li><Link href="/all-games" style={{ color: "var(--accent-green)", fontWeight: 700 }}>Browse All {GAMES.length}+ Games →</Link></li>
+              <li><Link prefetch={false} href="/game/subway-surfers">Subway Surfers</Link></li>
+              <li><Link prefetch={false} href="/game/free-fire-max">Free Fire MAX</Link></li>
+              <li><Link prefetch={false} href="/game/minecraft">Minecraft</Link></li>
+              <li><Link prefetch={false} href="/game/capcut">CapCut Video Editor</Link></li>
+              <li><Link prefetch={false} href="/game/block-blast">Block Blast!</Link></li>
+              <li><Link prefetch={false} href="/all-games" style={{ color: "var(--accent-green)", fontWeight: 700 }}>Browse All {GAMES.length}+ Games →</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Legal &amp; Information</h4>
             <ul>
-              <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/privacy">Privacy Policy</Link></li>
-              <li><Link href="/terms">Terms of Service</Link></li>
-              <li><Link href="/dmca">DMCA Policy</Link></li>
+              <li><Link prefetch={false} href="/about">About Us</Link></li>
+              <li><Link prefetch={false} href="/contact">Contact</Link></li>
+              <li><Link prefetch={false} href="/privacy">Privacy Policy</Link></li>
+              <li><Link prefetch={false} href="/terms">Terms of Service</Link></li>
+              <li><Link prefetch={false} href="/dmca">DMCA Policy</Link></li>
             </ul>
           </div>
         </div>
