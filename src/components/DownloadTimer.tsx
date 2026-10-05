@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, CheckCircle2, ShieldCheck, ExternalLink, Smartphone, Server } from "lucide-react";
+import { Download, CheckCircle2, ExternalLink, Smartphone, Server } from "lucide-react";
 
 interface DownloadTimerProps {
   downloadUrl?: string;
@@ -37,7 +37,7 @@ export default function DownloadTimer({
       {!ready ? (
         <div style={{ padding: "2.5rem 1.5rem", background: "var(--bg-tertiary)", borderRadius: "var(--radius-lg)", margin: "1.5rem 0", border: "1px solid var(--border-color)" }}>
           <p style={{ fontSize: "1.1rem", marginBottom: "0.5rem", fontWeight: 600 }}>
-            Preparing your secure download for {gameName} (v{version}):
+            Preparing your secure download for {gameName} ({isOlderVersion ? "Archive Build " : ""}v{version}):
           </p>
           <div style={{ fontSize: "3.8rem", fontWeight: 900, color: "var(--accent-green)", margin: "0.5rem 0", fontFamily: "monospace" }}>
             {countdown}s

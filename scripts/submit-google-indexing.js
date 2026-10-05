@@ -1,27 +1,16 @@
-const { google } = require('googleapis');
-const fs = require('fs');
-const path = require('path');
-
 console.log("====================================================");
 console.log("    GOOGLE INDEXING API INSTANT SUBMISSION TOOL     ");
 console.log("====================================================");
+console.warn("🛑 EXECUTION BLOCKED FOR DOMAIN SAFETY:");
+console.warn("Google Indexing API is strictly restricted to JobPosting and BroadcastEvent pages.");
+console.warn("Submitting general game/APK pages violates Google Webmaster Guidelines and triggers");
+console.warn("algorithmic domain penalties (0 impressions / sandbox freeze).");
+console.warn("Please use Google Search Console XML Sitemap submissions instead.");
+process.exit(0);
 
-const rootDir = path.join(__dirname, '..');
-const jsonFiles = fs.readdirSync(rootDir).filter(f => f.endsWith('.json') && f !== 'package.json' && f !== 'package-lock.json' && f !== 'tsconfig.json');
-
-let keyFile = null;
-if (fs.existsSync(path.join(rootDir, 'service_account.json'))) {
-  keyFile = path.join(rootDir, 'service_account.json');
-} else if (jsonFiles.length > 0) {
-  keyFile = path.join(rootDir, jsonFiles[0]);
-}
-
-if (!keyFile) {
-  console.error("❌ ERROR: No Service Account JSON key file found in root directory!");
-  process.exit(1);
-}
-
-console.log(`🔑 Using Key File: ${path.basename(keyFile)}`);
+const { google } = require('googleapis');
+const fs = require('fs');
+const path = require('path');
 
 const keyData = JSON.parse(fs.readFileSync(keyFile, 'utf8'));
 console.log(`👤 Service Account Email: ${keyData.client_email}`);

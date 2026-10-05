@@ -21528,7 +21528,7 @@ export function getApkMirrorUrl(game: Game): string {
   return `https://www.apkmirror.com/?s=${encodeURIComponent(game.name)}`;
 }
 
-export function getApkPureUrl(game: Game, version?: string): string {
+export function getApkPureUrl(game: Game): string {
   const pkg = getGamePackage(game);
   if (pkg) {
     return `https://apkpure.com/p/${pkg}`;

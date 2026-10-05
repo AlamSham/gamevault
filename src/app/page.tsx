@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import GameCard from "@/components/GameCard";
 import JsonLd from "@/components/JsonLd";
@@ -5,6 +6,14 @@ import { getTrendingGames, getFeaturedGames, GAMES } from "@/data/games";
 import { CATEGORIES } from "@/data/categories";
 import { BLOG_POSTS } from "@/data/blogs";
 import { ShieldCheck, Flame, Sparkles, BookOpen, Search } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "GameVault APK — Safe & Free Android Game Downloads (Latest 2026)",
+  description: "Download 100% safe and verified Android game APKs. Latest versions, fast direct downloads, offline action, racing, sports & puzzle games.",
+  alternates: {
+    canonical: "https://gamevaultinfo.com",
+  },
+};
 
 export default function HomePage() {
   const trendingGames = getTrendingGames(10);
