@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getBlogById, getAllBlogIds, getAllBlogs } from "@/data/blogs";
 import JsonLd from "@/components/JsonLd";
-import { CheckCircle2, ShieldCheck, Clock, User, Calendar, Share2, ArrowLeft, Award, Smartphone } from "lucide-react";
+import { ShieldCheck, Clock, Calendar, ArrowLeft, Award } from "lucide-react";
 
 interface BlogPageProps {
   params: Promise<{ id: string }>;
@@ -111,7 +111,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           </span>
         </div>
 
-        <h1 style={{ fontSize: "2.4rem", lineHeight: 1.25, fontWeight: 800, margin: "0.5rem 0 1.2rem", color: "#fff" }}>
+        <h1 style={{ fontSize: "2.4rem", lineHeight: 1.25, fontWeight: 800, margin: "0.5rem 0 1.2rem", color: "var(--text-primary)" }}>
           {blog.title}
         </h1>
 

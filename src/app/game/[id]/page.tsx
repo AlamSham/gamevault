@@ -235,7 +235,7 @@ export default async function GameDetailPage({ params }: GamePageProps) {
           <div style={{ display: "flex", gap: "1rem", margin: "1rem 0", flexWrap: "wrap", alignItems: "center" }}>
             <div className="game-card-rating" style={{ fontSize: "1.1rem" }}>
               <Star size={18} fill="#ffd700" color="#ffd700" />
-              <strong style={{ color: "#fff" }}>{game.rating}</strong> / 5.0
+              <strong style={{ color: "var(--text-primary)" }}>{game.rating}</strong> / 5.0
             </div>
             <span style={{ color: "var(--text-tertiary)" }}>•</span>
             <span style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>📥 {game.downloads} Downloads</span>
